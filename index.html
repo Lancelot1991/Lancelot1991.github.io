@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>BEC Green</title>
-        <link rel="stylesheet" href="index.css"/>
-        <link rel="stylesheet" href="table.css"/>
-    </head>
-    <body>
-<div class="navbar" style="height: 45px; background-color: darkgreen; z-index: 5; position: sticky; top: 0"></div>
-<div class="cover" style="height:100vh; margin-top:-45px; background-color: black; z-index: 1; position: relative;"></div>
+<head>
+    <meta charset="UTF-8"/>
+    <title>BEC Green</title>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- this gets the jquery to further load the navbar on each page-->
+</head>
+
+<body>
+
+<!--Heather-->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("header.html");
+});
+</script>
+<!--Heather-->
+
+
+
+<div class="cover">
+    <h1 class="slogan">Permacultura i bio-arquitectura per a un món més verd</h1>
+    <h2>Des de la nostra base al peu del Montseny</h2>
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+</script>
+<!--Footer-->
+
+
+    </body>
+
