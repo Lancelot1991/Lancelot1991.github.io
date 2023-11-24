@@ -167,20 +167,24 @@ p{
     padding: 50px 0 20px 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1090px) {
     .logo{
         padding-left: 10px;
         font-weight: 600;
-        font-size: x-large;
+        font-size: large;
     }
     .menu{
         padding-right: 10px;
         gap: 10px;
     }
+
+    .menu>a{
+        font-size: small;
+    }
     .slogan{
         font-size: x-large;
     }
-    .subtitol, p{
+    .subtitol{
         font-size: large;
     }
     .card-wrap{
@@ -191,19 +195,20 @@ p{
         padding: 15px 5px 15px 5px;
     }
 
-    .titol, .titol-index{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        letter-spacing: .05em;
+    .titol{
         font-size: large;
         font-weight: 600;
-        padding: 120px 5px 75px 5px;
+        padding: 120px 5px 10px 5px;
+    }
+    .titol-index{
+        font-size: large;
+        font-weight: 600;
+        padding: 40px 5px 20px 5px;
     }
 
+
     .intro>p{
-        padding: 0px 5px 100px 5px;
+        padding: 0px 5px 70px 5px;
     }
     
     .outro>p{
