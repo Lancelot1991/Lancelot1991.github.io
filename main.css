@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* border: 1px solid black; */
+
 }
 
 a{
@@ -37,12 +39,15 @@ a{
     font-weight: 600;
 }
 
-.menu>a, .logo{
+.menu>a{
     color:black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: medium;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .11em;
 }
+
 .menu>a:hover{
     text-decoration: underline;
 }
@@ -88,9 +93,10 @@ a{
     align-items: center;
     justify-content: center;
     border-top: 1px solid black;
+    margin-top: 200px;
 }
 
-.intro, .cards{
+.intro, .outro, .cards{
     max-width: 1000px;
     margin: auto;
     display: flex;
@@ -99,8 +105,13 @@ a{
 }
 
 .intro>p{
-    padding: 70px 10px 100px 10px;
+    padding: 0px 10px 100px 10px;
 }
+
+.outro>p{
+    padding: 50px 10px 0px 10px;
+}
+
 .card{
     width: 50%;
     display: flex;
@@ -108,14 +119,32 @@ a{
     justify-content: start;
     align-items: start;
     padding: 10px;
-    margin-bottom: 250px;
 }
 
-.card>h3{
+h3{     /*titol imatges*/
     width: 100%;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: .05em;
 }
 .card>img{
     width: 100%;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.titol, .titol-index{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .05em;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 120px 10px 75px 10px;
+    text-transform: uppercase;
+
+}
+
+.titol-index{
+    padding: 50px 0 20px 0;
 }
