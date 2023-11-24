@@ -139,7 +139,7 @@ h3{     /*titol card imatges*/
     margin-top: 20px;
 }
 
-.card>p{
+p{
     font-size: medium;
 }
 
@@ -184,6 +184,9 @@ h3{     /*titol card imatges*/
     }
     .card{
         padding: 5px;
+    }
+    .card>p{
+        font-size: small;
     }
 
     .titol, .titol-index{
