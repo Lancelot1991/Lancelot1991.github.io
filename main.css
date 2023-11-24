@@ -23,6 +23,7 @@ a{
     top: 0;
     left: 0;
     z-index: 1;
+    border-bottom: 4px solid black;
 }
 
 
@@ -79,6 +80,7 @@ a{
 
 .slogan{
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .slogan, .subtitol{
@@ -168,6 +170,9 @@ p{
 }
 
 @media (max-width: 1090px) {
+    .header{
+        height: 50px; 
+    }
     .logo{
         padding-left: 10px;
         font-weight: 600;
