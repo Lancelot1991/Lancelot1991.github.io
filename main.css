@@ -167,7 +167,7 @@ p{
     padding: 50px 0 20px 0;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 600px) {
     .logo{
         padding-left: 10px;
         font-weight: 600;
