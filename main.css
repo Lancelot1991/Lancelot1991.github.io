@@ -172,6 +172,7 @@ p{
 @media (max-width: 1090px) {
     .header{
         height: 50px; 
+        border-bottom: 3px solid black;
     }
     .logo{
         padding-left: 10px;
