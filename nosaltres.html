@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>BEC Green</title>
+        <link rel="stylesheet" href="main.css"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script> <!-- this gets the jquery to further load the navbar on each page-->
+    </head>
+
+    <body>
+
+<!--Heather-->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("header.html");
+});
+</script>
+<!--Heather-->
+
+<div class="intro">
+  <p>Aquest projecte neix gràcies a la col·laboració entre BEC, una empresa amb més de cinquanta anys d'experiència desenvolupant projectes a mida, i l'Òscar Llovera, un entusiasta de la bio-arquitectura i la permacultura.</p>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <h3>BEC</h3>
+    <img src="arquitectura.jpg">
+    <p>Pots conèxer més sobre BEC a la <a href="https://www.e-bec.es/">plana web</a> de l'empresa.</p>
+  </div>
+  <div class="card">
+    <h3>Òscar Llovera</h3>
+    <img src="permacultor.jpg">
+    <p>Pots conèixer més sobre l'Òscar al seu compte d'<a href="https://www.instagram.com/plants___and___company/">Instagram</a>.</p>
+  </div>
+</div>
+
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("footer.html");
+});
+</script>
+<!--Footer-->
+
+    </body>
