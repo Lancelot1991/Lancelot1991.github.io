@@ -41,8 +41,7 @@ select{
 
 .logo{
     padding-left: 20px;
-    font-weight: 600;
-    font-size: xx-large;
+    height: 30px;
 }
 .menu{
     padding-right: 20px;
@@ -211,20 +210,24 @@ p{
     }
     .logo{
         padding-left: 10px;
-        font-weight: 600;
-        font-size: small;
+        height: 22px;
     }
     .menu{
         padding-right: 10px;
         gap: 10px;
     }
+
+    label{
+        display: none;
+    }
+
     select{
-        font-size: small;
+        font-size: x-small;
     }
 
     .menu>a{
-        font-size: small;
-        padding: 0px 5px;;
+        font-size: x-small;
+        padding: 0px 5px;
     }
     .eslogan{
         font-size: x-large;
@@ -237,27 +240,21 @@ p{
     }
     .card{
         width: 100%;
-        padding: 15px 5px 15px 5px;
     }
 
     .titol{
         font-size: large;
         font-weight: 600;
-        padding: 120px 5px 10px 5px;
+        padding: 120px 0px 10px 0px;
     }
     .titol-index{
         font-size: large;
         font-weight: 600;
-        padding: 40px 5px 20px 5px;
+        padding: 40px 0px 20px 0px;
     }
 
-
-    .intro>p{
-        padding: 0px 5px 70px 5px;
-    }
-    
-    .outro>p{
-        padding: 50px 5px 0px 5px;
+    .intro, .card-wrap, .outro{
+        padding: 0px 7px;
     }
 }
 
