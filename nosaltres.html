@@ -4,7 +4,6 @@
     <meta charset="UTF-8"/>
     <title>BEC Green</title>
     <link rel="stylesheet" href="main.css"/>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- this gets the jquery to further load the navbar on each page-->
     <link rel="icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-27/78048a9552e310aaf7b3858497943339.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,42 +11,61 @@
 </head>
 
 <body>
+  <header>
+    <div class="header">
+      <div class="nav-left">
+          <a href="/index.html"><img class="logo" src="/icons/logo_bec.svg" height="30px"></a>
+      </div>
+  
+      <div class="nav-right">
+          <ul class="menu">
+              <a href="/contacte.html" data-i18n="contacte"></a>
+              <a href="/nosaltres.html" data-i18n="nosaltres"></a>
+              <a href="/voluntariat.html" data-i18n="voluntariat"></a>
+          </ul>
+          <nav class="language">
+              <label for="languageSelect">&#127758;</label>
+              <select id="languageSelect" onchange="changeLanguage(value)">
+                  <option value="ca">CA</option>
+                  <option value="es">ES</option>
+                  <!-- <option value="en">EN</option> -->
+              </select>
+          </nav>
+      </div>
+    </div>
+  </header>
 
-<!--Heather-->
-<div id="header-placeholder"></div>
-<script>
-$(function(){
-  $("#header-placeholder").load("header.html");
-});
-</script>
-<!--Heather-->
-
-<div class="titol">Nosaltres</div>
+<div class="titol" data-i18n="titol_nosaltres"></div>
 <div class="intro">
-  <p>Aquest projecte neix gràcies a la col·laboració entre BEC, una empresa amb més de cinquanta anys d'experiència desenvolupant projectes a mida, i l'Òscar Llovera, un entusiasta de la bio-arquitectura i la permacultura.</p>
+  <p data-i18n="intro_nosaltres"></p>
 </div>
 
 <div class="card-wrap">
   <div class="card">
     <h3>BEC</h3>
     <img src="/images/arquitectura.jpg">
-    <p>Pots conèxer més sobre BEC al <a href="https://www.e-bec.es/" target="_blank">portal web</a> de l'empresa.</p>
+    <p data-i18n="bec_des"></p>    
+    <div class="link-wrap">
+      <a class="link" href="https://www.e-bec.es/" target="_blank">BEC</a>
+    </div>
+
   </div>
   <div class="card">
     <h3>Òscar Llovera</h3>
     <img src="/images/permacultor.jpg">
-    <p>Pots conèixer més sobre l'Òscar al seu compte d'<a href="https://www.instagram.com/plants___and___company/" target="_blank">Instagram</a>.</p>
+    <p data-i18n="oscar_des"></p>
+    <div class="link-wrap">
+      <a class="link" href="https://www.instagram.com/plants___and___company/" target="_blank">Instagram Òscar</a>
+    </div>
   </div>
 </div>
 
 
-<!--Footer-->
-<div id="footer-placeholder"></div>
-<script>
-$(function(){
-  $("#footer-placeholder").load("footer.html");
-});
-</script>
-<!--Footer-->
+<footer>
+  <div class="footer"><p data-i18n="footer"></p>
+  </div>
+</footer>
 
-    </body>
+<script src="multilang.js"></script>
+
+</body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Website</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="heading-english" class="hidden" lang="en">Welcome to My Website</h1>
+        <h1 id="heading-french" class="hidden" lang="fr">Bienvenue sur mon site web</h1>
+        <h1 id="heading-spanish" class="hidden" lang="es">Bienvenido a mi sitio web</h1>
+    </header>
+
+    <nav>
+        <label for="language-select">Select Language:</label>
+        <select id="language-select" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+        </select>
+    </nav>
+
+    <section id="section-english" class="hidden" lang="en">
+        <h2>English Section</h2>
+        <p>This is the English content of the website.</p>
+    </section>
+
+    <section id="section-french" class="hidden other" lang="fr">
+        <h2>Section Française</h2>
+        <p>Ceci est le contenu en français du site web.</p>
+    </section>
+
+    <section id="section-spanish" class="hidden" lang="es">
+        <h2>Sección en Español</h2>
+        <p>Este es el contenido en español del sitio web.</p>
+    </section>
+
+    <footer>
+        <p id="footer-english" class="hidden" lang="en">© 2023 Multilingual Website. All rights reserved.</p>
+        <p id="footer-french" class="hidden" lang="fr">© 2023 Site Web Multilingue. Tous droits réservés.</p>
+        <p id="footer-spanish" class="hidden" lang="es">© 2023 Sitio Web Multilingüe. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function changeLanguage() {
+            var selectedLanguage = document.getElementById("language-select").value;
+
+            // Hide all elements
+            hideAll();
+
+            // Show elements for the selected language
+            var elementsToShow = document.querySelectorAll('[lang="' + selectedLanguage + '"]');
+            elementsToShow.forEach(element => {
+                element.classList.remove("hidden");
+            });
+        }
+
+        function hideAll() {
+            var elementsToHide = document.querySelectorAll('[lang]');
+            elementsToHide.forEach(element => {
+                element.classList.add("hidden");
+            });
+        }
+
+        // Initial setup to show content in the default language
+        changeLanguage();
+    </script>
+
+</body>
+</html>

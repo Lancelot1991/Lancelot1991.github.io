@@ -4,7 +4,6 @@
     <meta charset="UTF-8"/>
     <title>BEC Green</title>
     <link rel="stylesheet" href="main.css"/>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- this gets the jquery to further load the navbar on each page-->
     <link rel="icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-27/78048a9552e310aaf7b3858497943339.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,17 +11,32 @@
 </head>
 
 <body>
+  <header>
+    <div class="header">
+      <div class="nav-left">
+          <a href="/index.html"><img class="logo" src="/icons/logo_bec.svg" height="30px"></a>
+      </div>
+  
+      <div class="nav-right">
+          <ul class="menu">
+              <a href="/contacte.html" data-i18n="contacte"></a>
+              <a href="/nosaltres.html" data-i18n="nosaltres"></a>
+              <a href="/voluntariat.html" data-i18n="voluntariat"></a>
+          </ul>
+          <nav class="language">
+              <label for="languageSelect">&#127758;</label>
+              <select id="languageSelect" onchange="changeLanguage(value)">
+                  <option value="ca">CA</option>
+                  <option value="es">ES</option>
+                  <!-- <option value="en">EN</option> -->
+              </select>
+          </nav>
+      </div>
+    </div>
+  </header>
 
-<!--Heather-->
-<div id="header-placeholder"></div>
-<script>
-$(function(){
-  $("#header-placeholder").load("header.html");
-});
-</script>
-<!--Heather-->
 
-<div class="titol">Voluntariat i activitats</div>
+<div class="titol" data-i18n="titol_voluntariat"></div>
 <div class="intro">
   <p>Aquest projecte avança gràcies als voluntaris! Cada dissabte, es fa una jornada amb gent apassionada que desitja aprendre permacultura, i no només això, també es volen embrutar les mans. Si vols participar, contacta amb nosaltres per tenir-te en compte a l'hora de preparar el dinar i, si no pots dissabte, també es fan jornades entre setmana.</p>
 </div>
@@ -31,26 +45,43 @@ $(function(){
   <div class="card">
     <h3>Hügelkultur</h3>
     <img src="/images/huglekultur.jpg">
-    <p>Actualment, tenim varis <a href="https://es.wikipedia.org/wiki/H%C3%BCgelkultur" target="_blank">hügelkultur</a> a la finca. Tres de petits en els que s'han plantat oliveres i horta, i un en procés d'implementació de 17 metres de llarg (imatge), amb una secció de 2x1 m. També tenim planejat fer-ne un de 36 metres de llarg, apuntat!</p>
+    <p data-i18n="hugelkultur_des"></p>
+    <div class="link-wrap" lang="ca">
+      <a class="link"href="https://es.wikipedia.org/wiki/H%C3%BCgelkultur" target="_blank">Hügelkultur</a> 
+    </div>
+    <div class="link-wrap" lang="es">
+      <a class="link"href="https://es.wikipedia.org/wiki/H%C3%BCgelkultur" target="_blank">Hügelkultur</a> 
+    </div>
+    <div class="link-wrap" lang="en">
+      <a class="link"href="https://en.wikipedia.org/wiki/H%C3%BCgelkultur" target="_blank">Hügelkultur</a> 
+    </div>
+    
   </div>
   <div class="card">
     <h3>No-till</h3>
     <img src="/images/notill.jpg">
-    <p>En l'horta <a href="https://ca.wikipedia.org/wiki/Sembra_directa" target="_blank">"no-till"</a>, el terra no es remou per fertilitzar ni per oxigenar. Aquestes funcions es deixen pels animals i insectes que hi viuen, que junt amb restes vegetals, s'encarreguen de mantenir-lo fèrtil i en bon estat.</p>
+    <p data-i18n="no-till_des"></p>
+    <div class="link-wrap" lang="ca">
+      <a class="link" href="https://ca.wikipedia.org/wiki/Sembra_directa" target="_blank">"No-till"</a>
+    </div>
+    <div class="link-wrap" lang="es">
+      <a class="link" href="https://es.wikipedia.org/wiki/Siembra_directa" target="_blank">"No-till"</a>
+    </div>
+    <div class="link-wrap" lang="en">
+      <a class="link" href="https://en.wikipedia.org/wiki/No-till_farming" target="_blank">"No-till"</a>
+    </div>
   </div>
 </div>
 
 <div class="outro">
-    <p>Aquestes són algunes de les activitats que fem, però n'hi ha moltes altres que, de mica en mica, anirem afegint a la pàgina. Consulta'ns per saber-ne més.</p>
+    <p data-i18n="outro_voluntariat"></p>
   </div>
 
-<!--Footer-->
-<div id="footer-placeholder"></div>
-<script>
-$(function(){
-  $("#footer-placeholder").load("footer.html");
-});
-</script>
-<!--Footer-->
+  <footer>
+    <div class="footer"><p data-i18n="footer"></p>
+    </div>
+  </footer>
+
+<script src="multilang.js"></script>
 
     </body>

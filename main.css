@@ -11,14 +11,26 @@ a{
     text-decoration: none;
 }
 
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+select{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 4px;
+    margin-left: 5px;
+
+}
+
 .header{
     width: 100%;
     height: 70px; 
     color: black;
     background-color: white;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -28,16 +40,15 @@ a{
 
 
 .logo{
-    display: flex;
     padding-left: 20px;
     font-weight: 600;
     font-size: xx-large;
 }
 .menu{
-    display: flex;
     padding-right: 20px;
     gap: 20px;
     font-weight: 600;
+    /* justify-content: space-between; */
 }
 
 .menu>a{
@@ -47,10 +58,16 @@ a{
     font-size: medium;
     font-family: "Roboto", sans-serif;
     letter-spacing: .11em;
+    padding: 0px 10px;
 }
 
 .menu>a:hover{
     text-decoration: underline;
+}
+
+.nav-right{
+    padding-right: 20px;
+    justify-content: end;
 }
 
 .cover{
@@ -60,10 +77,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     position: relative;
     color: white;
 
@@ -78,62 +92,75 @@ a{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.slogan{
+.eslogan{
     padding-bottom: 20px;
     text-align: center;
 }
 
-.slogan, .subtitol{
+.eslogan, .subtitol{
     z-index: 3;
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
 }
 
-.slogan{
+.eslogan{
     font-size: xx-large;
 }
 .subtitol{
     font-size: x-large;
 }
 
+.link-wrap{
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 80px;
+}
+
+.link{
+    color: black;
+    background-color: white;
+    font-size: small;
+    padding: 30px 20px 5px 0px;
+    font-weight: 200;
+}
+
+.link:after{
+    content: " ⧉";
+}
+
+
 .footer{
     height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-top: 1px solid black;
     margin-top: 200px;
 }
 
 .intro, .outro{
-    max-width: 1000px;
     margin: auto;
-    display: flex;
-    justify-content: center;
+    max-width: 1000px;
+    flex-direction: column;
     align-items: start;
 }
 
-.intro>p{
-    padding: 0px 10px 100px 10px;
+.intro>p, .outro>p{
+    padding: 10px 0px;
 }
 
-.outro>p{
-    padding: 50px 10px 0px 10px;
-}
 .card-wrap{
     max-width: 1000px;
     margin: auto;
-    display: grid;
+    padding-top: 50px;
+    align-items: start;
+    gap:30px;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px;
+    gap: 0px; */
 }
 .card{
-    /* width: 50%; */
-    display: flex;
+    width: 50%;
     flex-direction: column;
-    justify-content: start;
+    /* padding: 10px; */
     align-items: start;
-    padding: 10px;
 }
 
 h3{     /*titol card imatges*/
@@ -153,20 +180,28 @@ p{
 }
 
 .titol, .titol-index{
-    display: flex;
-    align-content: center;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .05em;
     font-size: x-large;
     font-weight: 600;
-    padding: 120px 10px 75px 10px;
+    padding: 120px 0px 75px 0px;
     text-transform: uppercase;
-
 }
 
 .titol-index{
     padding: 50px 0 20px 0;
+}
+
+.contacte{
+    max-width: 1000px;
+    margin: auto;
+}
+.contacte>ul{
+    max-width: 1000px;
+    margin: auto;
+    font-size: xx-large;
+    font-weight: 500;
+    padding-top: 200px;
 }
 
 @media (max-width: 1090px) {
@@ -177,27 +212,31 @@ p{
     .logo{
         padding-left: 10px;
         font-weight: 600;
-        font-size: large;
+        font-size: small;
     }
     .menu{
         padding-right: 10px;
         gap: 10px;
     }
+    select{
+        font-size: small;
+    }
 
     .menu>a{
         font-size: small;
+        padding: 0px 5px;;
     }
-    .slogan{
+    .eslogan{
         font-size: x-large;
     }
     .subtitol{
         font-size: large;
     }
     .card-wrap{
-        grid-template-columns: 1fr;
-        gap: 0px;
+        flex-direction: column;
     }
     .card{
+        width: 100%;
         padding: 15px 5px 15px 5px;
     }
 
@@ -220,4 +259,8 @@ p{
     .outro>p{
         padding: 50px 5px 0px 5px;
     }
+}
+
+.hidden{
+    display: none;
 }

@@ -4,58 +4,90 @@
     <meta charset="UTF-8"/>
     <title>BEC green</title>
     <link rel="stylesheet" href="main.css"/>
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!-- this gets the jquery to further load the navbar on each page-->
     <link rel="icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-27/78048a9552e310aaf7b3858497943339.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
+<header>
+  <div class="header">
+    <div class="nav-left">
+        <a href="/index.html"><img class="logo" src="/icons/logo_bec.svg" height="30px"></a>
+    </div>
 
-<!--Header-->
-<div id="header-placeholder"></div>
-<script>
-$(function(){
-  $("#header-placeholder").load("header.html");
-});
-</script>
-<!--Heather-->
+    <div class="nav-right">
+        <ul class="menu">
+            <a href="/contacte.html" data-i18n="contacte"></a>
+            <a href="/nosaltres.html" data-i18n="nosaltres"></a>
+            <a href="/voluntariat.html" data-i18n="voluntariat"></a>
+        </ul>
+        <nav class="language">
+            <label for="languageSelect">&#127758;</label>
+            <select id="languageSelect" onchange="changeLanguage(value)">
+                <option value="ca">CA</option>
+                <option value="es">ES</option>
+                <!-- <option value="en">EN</option> -->
+            </select>
+        </nav>
+    </div>
+  </div>
+</header>
 
 
 <div class="cover">
     <div class="overlay"></div>
-    <h1 class="slogan">Permacultura i bio-arquitectura per a un món més verd</h1>
-    <h2 class="subtitol">Des de la falda del Montseny</h2>
+    <h1 class="eslogan" data-i18n="eslogan"></h1>
+    <h2 class="subtitol" data-i18n="subtitol"></h2>
+
 </div>
 
-<div class="titol-index">La base</div>
+<div class="titol-index" data-i18n="titol_index"></div>
+
 <div class="intro">
-  <p>Aquesta finca de 7.500 m<sup>2</sup> està ubicada a Llinars del Vallès, a mig camí entre Barcelona i Girona, just al peu del <a href="https://ca.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turò de l'Home</a>. Ens serveix per a cultivar diferents varietats de <a href="https://ca.wikipedia.org/wiki/Clavellina_d%27aire" target="_blank">tillandsies</a> i com a mostra del potencial que té l'agricultura basada en la <a href="https://ca.wikipedia.org/wiki/Permacultura" target="_blank">permacultura</a>.<br><br>
-    Tot això amb el motiu de proporcionar serveis d'arquitectura verda, així com el disseny i implementació de projectes agraris de permacultura per a particulars i organitzacions. Paral·lelament, oferim formació gratuïta als nostres voluntaris i, amb el temps, produirem conserves i altres productes alimentaris de la màxima qualitat.</p>
+  <p data-i18n="intro_a_index"></p>
+  <p data-i18n="intro_b_index"></p>
+  <div class="link-wrap" lang="ca">
+    <a class="link"href="https://ca.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
+    <a class="link"href="https://ca.wikipedia.org/wiki/Clavellina_d%27aire" target="_blank">Tillandsies</a>
+    <a class="link"href="https://ca.wikipedia.org/wiki/Permacultura" target="_blank">Permacultura</a>
+  </div>
+  <div class="link-wrap" lang="es">
+    <a class="link"href="https://es.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
+    <a class="link"href="https://es.wikipedia.org/wiki/Tillandsia" target="_blank">Tillandsias</a>
+    <a class="link"href="https://es.wikipedia.org/wiki/Permacultura" target="_blank">Permacultura</a>
+  </div>
+  <div class="link-wrap" lang="en">
+    <a class="link"href="https://en.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
+    <a class="link"href="https://en.wikipedia.org/wiki/Tillandsia" target="_blank">Tillandsies</a>
+    <a class="link"href="https://en.wikipedia.org/wiki/Permaculture" target="_blank">Permaculture</a>
+  </div>
 </div>
+
+
+
+
 
 <div class="card-wrap">
   <div class="card">
-    <h3>Bio-arquitectura</h3>
+    <h3 data-i18n="bioarquitectura"></h3>
     <img src="/images/bioarquitectura.png">
-    <p>Les Tillandsies són el punt de partida idoni per la bio-arquitectura del futur: amb la mínima humitat i pols que puguin atrapar en tenen prou per viure, de manera que el manteniment és quasi nul i, al mateix temps, van atrapant CO₂ de l'atmosfera.</p>
+    <p data-i18n="bioarquitectura_des"></p>
   </div>
   <div class="card">
-    <h3>Permacultura</h3>
+    <h3 data-i18n="permacultura"></h3>
     <img src="/images/permacultura.jpg">
-    <p>L'agricultura basada en la permacultura es proposa entendre i potenciar el cicle natural de les plantes i el seu entorn, combinant-les entre elles i altres formes de vida per aconseguir un sistema que funcioni quasi independentment de la intervenció humana, al mateix temps que produeix aliments.</p>
+    <p data-i18n="permacultura_des"></p>
   </div>
 </div>
 
-<!--Footer-->
-<div id="footer-placeholder"></div>
-<script>
-$(function(){
-  $("#footer-placeholder").load("footer.html");
-});
-</script>
-<!--Footer-->
+<footer>
+  <div class="footer"><p data-i18n="footer"></p>
+  </div>
+</footer>
 
-
+<script src="multilang.js"></script>
     </body>
+
+    
 
