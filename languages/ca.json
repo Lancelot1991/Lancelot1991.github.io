@@ -2,6 +2,7 @@
     "contacte": "Contacte",
     "nosaltres": "Nosaltres",
     "voluntariat": "Voluntariat",
+    "activitats": "Activitats",
     "eslogan": "Permacultura i bio-arquitectura per a un món més verd",
     "subtitol": "Des de la falda del Montseny",
     "titol_index": "La Base",
@@ -15,10 +16,14 @@
 
     "intro_contacte": "Si estàs interessat en el projecte i en vols saber més, o tu mateix vols començar-ne un i necessites ajuda, pots contactar amb nosaltres:",
 
-    "titol_voluntariat": "Voluntariat i activitats",
+    "titol_voluntariat": "Voluntariat",
+    "intro_voluntariat": "Aquest projecte avança gràcies als voluntaris! Cada dissabte, es fa una jornada amb gent apassionada que desitja aprendre permacultura i, no només això, també es volen embrutar les mans. Si vols participar, contacta amb nosaltres per tenir-te en compte a l'hora de preparar el dinar i, si no pots dissabte, també es fan jornades entre setmana.",
     "hugelkultur_des": "Actualment, tenim varis hunglekultur a la finca. Tres de petits en els que s'han plantat oliveres i horta, i un en procés d'implementació de 17 metres de llarg (imatge), amb una secció de 2x1 m. També tenim planejat fer-ne un de 36 metres de llarg, apuntat!",
     "no-till_des": "En l'horta no-till, el terra no es remou per fertilitzar ni per oxigenar. Aquestes funcions es deixen pels animals i insectes que hi viuen, que junt amb restes vegetals, s'encarreguen de mantenir-lo fèrtil i en bon estat.",
     "outro_voluntariat": "Aquestes són algunes de les activitats que fem, però n'hi ha moltes altres que, de mica en mica, anirem afegint a la pàgina. Consulta'ns per saber-ne més.",
+
+    "titol_activitats": "Activitats",
+    "intro_activitats": "Som una escola de permacultura sense ànim de lucre, i per això les nostres activitats no tenen cost, sols el fet que hi participeu ens ajuda i, a la fi, és la millor manera d'aprendre. Recorda que els dies que hi hagi activitats al matí i a la tarda ens encarreguem de preparar el dinar, ens heu d'avisar si veniu per poder preparar-lo! En la taula següent trobareu les activitats programades per a les següents setmanes:",
 
     "titol_nosaltres": "Nosaltres",
     "intro_nosaltres": "Aquest projecte neix gràcies a la col·laboració entre BEC, una empresa amb més de cinquanta anys d'experiència desenvolupant projectes a mida, i l'Òscar Llovera, un entusiasta de la bio-arquitectura i la permacultura.",
