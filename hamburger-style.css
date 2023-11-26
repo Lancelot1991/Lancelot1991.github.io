@@ -1,0 +1,104 @@
+
+.hamburger-menu, .sidebar{
+  display: none;
+}
+
+
+@media (max-width: 1090px) {
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --bar-width: 30px;
+  --bar-height: 3px;
+  --hamburger-gap: 4px;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  /* position: absolute;
+  top: var(--hamburger-margin);
+  left: var(--hamburger-margin); */
+  margin: var(--hamburger-margin);
+  z-index: 150;
+  cursor: pointer;
+  background-color: white;
+}
+
+.hamburger-menu:has(input:focus-visible)::before,
+.hamburger-menu:has(input:focus-visible)::after,
+.hamburger-menu input:focus-visible {
+  border: 1px solid black;
+  box-shadow: 0 0 0 1px black;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: rgb(0, 0, 0);
+  border-radius: 0px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  transition: translate var(--animation-timing);
+  translate: 100%;
+  padding: 0.5rem 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  z-index: 130;
+  border-bottom: 1px solid black;
+}
+
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+}
+

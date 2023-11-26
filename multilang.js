@@ -35,12 +35,14 @@
     updateContent(langData);
     
     // Seleccionar l'opcio guardada al deplegable, si no, cada cop que actualitza la pagina, es posa el primer
-    var mySelect = document.getElementById('languageSelect');
+    var mySelect1 = document.getElementById('languageSelect1');
+    var mySelect2 = document.getElementById('languageSelect2');
 
     // mySelect.selectedIndex = 2;
-    for(var i, j = 0; i = mySelect.options[j]; j++) {
+    for(var i, j = 0; i = mySelect1.options[j]; j++) {
         if(i.value == userPreferredLanguage) {
-            mySelect.selectedIndex = j;
+            mySelect1.selectedIndex = j;
+            mySelect2.selectedIndex = j;
             break;
     }}
 

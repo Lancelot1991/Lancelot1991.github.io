@@ -11,7 +11,7 @@ a{
     text-decoration: none;
 }
 
-div{
+div, .logo-wrap{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ select{
 
 .header{
     width: 100%;
-    height: 70px; 
+    height: 60px; 
     color: black;
     background-color: white;
     justify-content: space-between;
@@ -38,10 +38,13 @@ select{
     border-bottom: 4px solid black;
 }
 
-
 .logo{
     padding-left: 20px;
     height: 30px;
+}
+
+.desktop-menu{
+    justify-content: end;
 }
 .menu{
     padding-right: 20px;
@@ -64,7 +67,7 @@ select{
     text-decoration: underline;
 }
 
-.nav-right{
+.desktop{
     padding-right: 20px;
     justify-content: end;
 }
@@ -112,15 +115,14 @@ select{
 .link-wrap{
     justify-content: start;
     align-items: start;
-    margin-bottom: 80px;
 }
 
 .link{
     color: black;
     background-color: white;
     font-size: small;
-    padding: 30px 20px 5px 0px;
-    font-weight: 200;
+    padding: 20px 20px 5px 0px;
+    font-weight: 400;
 }
 
 .link:after{
@@ -148,17 +150,13 @@ select{
 .card-wrap{
     max-width: 1000px;
     margin: auto;
-    padding-top: 50px;
     align-items: start;
     gap:30px;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px; */
+
 }
 .card{
     width: 50%;
     flex-direction: column;
-    /* padding: 10px; */
     align-items: start;
 }
 
@@ -214,11 +212,10 @@ p{
     }
     .menu{
         padding-right: 10px;
+        padding-top: 10px;
         gap: 10px;
-    }
-
-    label{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
 
     select{
@@ -236,6 +233,7 @@ p{
         font-size: large;
     }
     .card-wrap{
+        margin-top: 50px;
         flex-direction: column;
     }
     .card{
@@ -255,6 +253,20 @@ p{
 
     .intro, .card-wrap, .outro{
         padding: 0px 7px;
+    }
+
+    .outro{
+        padding-top: 30px;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .language{
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 }
 

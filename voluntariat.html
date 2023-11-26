@@ -2,43 +2,62 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>BEC Green</title>
+    <title>BEC green</title>
     <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="hamburger-style.css"/>
     <link rel="icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-27/78048a9552e310aaf7b3858497943339.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 </head>
 
 <body>
-  <header>
-    <div class="header">
-      <div class="nav-left">
-          <a href="/index.html"><img class="logo" src="/icons/logo_bec.svg" height="30px"></a>
-      </div>
-  
-      <div class="nav-right">
-          <ul class="menu">
-              <a href="/contacte.html" data-i18n="contacte"></a>
-              <a href="/nosaltres.html" data-i18n="nosaltres"></a>
-              <a href="/voluntariat.html" data-i18n="voluntariat"></a>
-          </ul>
-          <nav class="language">
-              <label for="languageSelect">&#127758;</label>
-              <select id="languageSelect" onchange="changeLanguage(value)">
-                  <option value="ca">CA</option>
-                  <option value="es">ES</option>
-                  <!-- <option value="en">EN</option> -->
-              </select>
-          </nav>
-      </div>
+<header>
+  <div class="header">
+    <div class="nav-left">
+        <a href="/index.html" class="logo-wrap"><img class="logo" src="/icons/logo_bec.svg"></a>
     </div>
-  </header>
+    <!-- Desktop menu -->
+    <div class="desktop">
+      <ul class="menu">
+          <a href="/contacte.html" data-i18n="contacte"></a>
+          <a href="/nosaltres.html" data-i18n="nosaltres"></a>
+          <a href="/voluntariat.html" data-i18n="voluntariat"></a>
+      </ul>
+      <nav class="language">
+        <label for="languageSelect">&#127758;</label>
+        <select id="languageSelect1" onchange="changeLanguage(value)">
+            <option value="ca">CA</option>
+            <option value="es">ES</option>
+            <!-- <option value="en">EN</option> -->
+        </select>
+      </nav>
+    </div>
+    <!-- Hamburger menu ICON -->
+    <label class="hamburger-menu">
+      <input type="checkbox"/>
+    </label>
+    <aside class="sidebar">
+      <nav class="language">
+        <label for="languageSelect">&#127758;</label>
+        <select id="languageSelect2" onchange="changeLanguage(value)">
+            <option value="ca">CA</option>
+            <option value="es">ES</option>
+            <!-- <option value="en">EN</option> -->
+        </select>
+      </nav>
+      <ul class="menu">
+        <a href="/contacte.html" data-i18n="contacte"></a>
+        <a href="/nosaltres.html" data-i18n="nosaltres"></a>
+        <a href="/voluntariat.html" data-i18n="voluntariat"></a>
+      </ul>
+    </aside>
+</div>
+</header>
 
 
 <div class="titol" data-i18n="titol_voluntariat"></div>
 <div class="intro">
-  <p>Aquest projecte avança gràcies als voluntaris! Cada dissabte, es fa una jornada amb gent apassionada que desitja aprendre permacultura, i no només això, també es volen embrutar les mans. Si vols participar, contacta amb nosaltres per tenir-te en compte a l'hora de preparar el dinar i, si no pots dissabte, també es fan jornades entre setmana.</p>
+  <p data-i18n="intro_voluntariat"></p>
 </div>
 
 <div class="card-wrap">
