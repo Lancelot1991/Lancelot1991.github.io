@@ -7,7 +7,7 @@
 }
 
 :root{
-    --background-color:#f7fffb;
+    --background-color:rgba(0, 39, 0, 0.048);
     --accent-color: rgb(0, 39, 0);
 }
 
@@ -127,7 +127,7 @@ select{
 .link{
     color: var(--accent-color);
     background-color: var(--background-color);
-    /* border: 1px solid rgb(0, 39, 0); */
+    border: 1px solid var(--accent-color);
     border-radius: 50px;
     font-size: small;
     /* padding: 20px 20px 5px 0px; */
@@ -217,6 +217,7 @@ p{
 }
 
 .tg-wrap {
+    display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: auto;
