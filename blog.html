@@ -2,7 +2,7 @@
 <html lang="ca">
 <head>
     <meta charset="UTF-8"/>
-    <title>BEC | Nosaltres</title>
+    <title>BEC | Blog</title>
     <link rel="stylesheet" href="/assets/styles.css"/>
     <link rel="icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-27/78048a9552e310aaf7b3858497943339.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
 <header>
   <div class="header">
     <div class="nav-left">
@@ -19,16 +20,16 @@
     <!-- Desktop menu -->
     <div class="desktop">
       <ul class="menu">
-        <a href="/contacte.html">contacte</a>
-        <a href="/blog.html">Blog</a>
-        <a href="/nosaltres.html">Nosaltres</a>
-        <a href="/voluntariat.html">Voluntariat</a>
-        <a href="/activitats.html">Activitats</a>
+          <a href="/contacte.html">contacte</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/nosaltres.html">Nosaltres</a>
+          <a href="/voluntariat.html">Voluntariat</a>
+          <a href="/activitats.html">Activitats</a>
       </ul>
       <nav class="language">
         <a class="selected-lang">CA</a>
-        <a class="optional-lang" href="es/nosotros.html">ES</a>
-        <a class="optional-lang" href="en/about-us.html">EN</a>
+        <a class="optional-lang" href="es/blog.html">ES</a>
+        <a class="optional-lang" href="en/blog.html">EN</a>
       </nav>
       <img src="icons/moon.png" class="light-btn" id="light-btn1">
 
@@ -40,8 +41,8 @@
     <aside class="sidebar">
       <nav class="language">
         <a class="selected-lang">CA</a>
-        <a class="optional-lang" href="es/nosotros.html">ES</a>
-        <a class="optional-lang" href="en/about-us.html">EN</a>
+        <a class="optional-lang" href="es/blog.html">ES</a>
+        <a class="optional-lang" href="en/blog.html">EN</a>
         <img src="icons/moon.png" class="light-btn" id="light-btn2">
       </nav>
       <ul class="menu">
@@ -55,31 +56,54 @@
 </div>
 </header>
 
-<div class="titol">Nosaltres</div>
-<div class="intro">
-  <p>Aquest projecte neix gràcies a la col·laboració entre BEC, una empresa amb més de cinquanta anys d'experiència desenvolupant projectes a mida, i l'Òscar Llovera, un entusiasta de la bio-arquitectura i la permacultura.</p>
+<div class="title">Blog</div>
+
+<select id="category-select" onchange="filterPost(value)">
+  <option value="permaculture" data-i18n="cat_permaculture"></option>
+  <option value="bioarquitecture" data-i18n="cat_bioarquitecture"></option>
+  <option value="design" data-i18n="cat_design"></option>
+
+</select>
+
+<div class="post-container">
+  <a href="post.html" class="permaculture design">
+    <div class="top-content">
+      <img src="images/permacultura.jpg" class="card-img">
+      <h4 class="card-title" data-i18n="card2-title"></h4>
+    </div>
+    <div class="bot-content">
+      <p class="card-description" data-i18n="card2-description"></p>
+      <p class="card-date" data-i18n="card2-date"></p>
+    </div>
+  </a>
+  <a href="post.html" class="bioarquitecture design">
+    <div class="top-content">
+      <img src="images/bioarquitectura.png" class="card-img">
+      <h4 class="card-title" data-i18n="card1-title"></h4>
+    </div>
+    <div class="bot-content">
+      <p class="card-description" data-i18n="card1-description"></p>
+      <p class="card-date" data-i18n="card1-date"></p>
+    </div>
+  </a>
 </div>
+
+
+
+
 
 <div class="card-wrap">
   <div class="card">
-    <h3>BEC</h3>
-    <img src="/images/arquitectura.jpg">
-    <p>Pots conèxer més sobre BEC al portal web de l'empresa.</p>    
-    <div class="link-wrap">
-      <a class="link" href="https://www.e-bec.es/" target="_blank">BEC</a>
-    </div>
-
+    <h3 data-i18n="bioarquitectura"></h3>
+    <img src="/images/bioarquitectura.png">
+    <p data-i18n="bioarquitectura_des"></p>
   </div>
   <div class="card">
-    <h3>Òscar Llovera</h3>
-    <img src="/images/permacultor.jpg">
-    <p>Pots conèixer més sobre l'Òscar al seu compte d'Instagram.</p>
-    <div class="link-wrap">
-      <a class="link" href="https://www.instagram.com/plants___and___company/" target="_blank">Instagram Òscar</a>
-    </div>
+    <h3 data-i18n="permacultura"></h3>
+    <img src="/images/permacultura.jpg">
+    <p data-i18n="permacultura_des"></p>
   </div>
 </div>
-
 
 <footer>
   <div class="footer"><p>Tots els drets reservats, © copyright 2023</p>
@@ -87,5 +111,7 @@
 </footer>
 
 <script src="/assets/script.js"></script>
+    </body>
 
-</body>
+    
+

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
 <head>
     <meta charset="UTF-8"/>
     <title>BEC green</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="/assets/styles.css"/>
     <link rel="icon" href="https://d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-01-27/78048a9552e310aaf7b3858497943339.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
+
 <header>
   <div class="header">
     <div class="nav-left">
@@ -19,18 +20,16 @@
     <!-- Desktop menu -->
     <div class="desktop">
       <ul class="menu">
-          <a href="/contacte.html" data-i18n="contacte"></a>
-          <a href="/nosaltres.html" data-i18n="nosaltres"></a>
-          <a href="/voluntariat.html" data-i18n="voluntariat"></a>
-          <a href="/activitats.html" data-i18n="activitats"></a>
+          <a href="/contacte.html">contacte</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/nosaltres.html">Nosaltres</a>
+          <a href="/voluntariat.html">Voluntariat</a>
+          <a href="/activitats.html">Activitats</a>
       </ul>
       <nav class="language">
-        <!-- <label for="languageSelect">&#127758;</label> -->
-        <select id="languageSelect1" onchange="changeLanguage(value)">
-            <option value="ca">CA</option>
-            <option value="es">ES</option>
-            <!-- <option value="en">EN</option> -->
-        </select>
+        <a class="selected-lang">CA</a>
+        <a class="optional-lang" href="es/">ES</a>
+        <a class="optional-lang" href="en/">EN</a>
       </nav>
       <img src="icons/moon.png" class="light-btn" id="light-btn1">
 
@@ -41,20 +40,18 @@
     </label>
     <aside class="sidebar">
       <nav class="language">
-        <!-- <label for="languageSelect">&#127758;</label> -->
-        <select id="languageSelect2" onchange="changeLanguage(value)">
-            <option value="ca">CA</option>
-            <option value="es">ES</option>
-            <!-- <option value="en">EN</option> -->
-        </select>
+        <a class="selected-lang">CA</a>
+        <a class="optional-lang" href="es/">ES</a>
+        <a class="optional-lang" href="en/">EN</a>
+        <img src="icons/moon.png" class="light-btn" id="light-btn2">
       </nav>
       <ul class="menu">
-        <a href="/contacte.html" data-i18n="contacte"></a>
-        <a href="/nosaltres.html" data-i18n="nosaltres"></a>
-        <a href="/voluntariat.html" data-i18n="voluntariat"></a>
-        <a href="/activitats.html" data-i18n="activitats"></a>
+        <a href="/contacte.html">contacte</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/nosaltres.html">Nosaltres</a>
+        <a href="/voluntariat.html">Voluntariat</a>
+        <a href="/activitats.html">Activitats</a>
       </ul>
-      <img src="icons/moon.png" class="light-btn" id="light-btn2">
     </aside>
 </div>
 </header>
@@ -62,55 +59,40 @@
 
 <div class="cover">
     <div class="overlay"></div>
-    <h1 class="eslogan" data-i18n="eslogan"></h1>
-    <h2 class="subtitol" data-i18n="subtitol"></h2>
+    <h1 class="eslogan">Permacultura i bio-arquitectura per a un món més verd</h1>
+    <h2 class="subtitol">Des de la falda del Montseny</h2>
 </div>
 
-<div class="titol-index" data-i18n="titol_index"></div>
+<div class="titol-index">Coneix La nostra Base</div>
 
 <div class="intro">
-  <p data-i18n="intro_a_index"></p>
-  <p data-i18n="intro_b_index"></p>
-  <div class="link-wrap" lang="ca">
+  <p>Aquesta finca de 7.500 m² està ubicada a Llinars del Vallès, a mig camí entre Barcelona i Girona, just al peu del Turó de l'Home. Ens serveix per a cultivar diferents varietats de tillandsies i com a mostra del potencial que té l'agricultura basada en la permacultura.<br><br>Tot això amb el motiu de proporcionar serveis d'arquitectura verda, així com el disseny i implementació de projectes agraris de permacultura per a particulars i organitzacions. Paral·lelament, oferim formació gratuïta als nostres voluntaris i, amb el temps, produirem conserves i altres productes alimentaris de la màxima qualitat.</p>
+  <div class="link-wrap">
     <a class="link"href="https://ca.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
     <a class="link"href="https://ca.wikipedia.org/wiki/Clavellina_d%27aire" target="_blank">Tillandsies</a>
     <a class="link"href="https://ca.wikipedia.org/wiki/Permacultura" target="_blank">Permacultura</a>
   </div>
-  <div class="link-wrap" lang="es">
-    <a class="link"href="https://es.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
-    <a class="link"href="https://es.wikipedia.org/wiki/Tillandsia" target="_blank">Tillandsias</a>
-    <a class="link"href="https://es.wikipedia.org/wiki/Permacultura" target="_blank">Permacultura</a>
-  </div>
-  <div class="link-wrap" lang="en">
-    <a class="link"href="https://en.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
-    <a class="link"href="https://en.wikipedia.org/wiki/Tillandsia" target="_blank">Tillandsies</a>
-    <a class="link"href="https://en.wikipedia.org/wiki/Permaculture" target="_blank">Permaculture</a>
-  </div>
 </div>
-
-
-
-
 
 <div class="card-wrap">
   <div class="card">
-    <h3 data-i18n="bioarquitectura"></h3>
+    <h3>BIO-arquitectura</h3>
     <img src="/images/bioarquitectura.png">
-    <p data-i18n="bioarquitectura_des"></p>
+    <p>Les Tillandsies són el punt de partida idoni per la bio-arquitectura del futur: amb la mínima humitat i pols que puguin atrapar en tenen prou per viure, de manera que el manteniment és quasi nul i, al mateix temps, van atrapant CO₂ de l'atmosfera.</p>
   </div>
   <div class="card">
-    <h3 data-i18n="permacultura"></h3>
+    <h3>Permacultura</h3>
     <img src="/images/permacultura.jpg">
-    <p data-i18n="permacultura_des"></p>
+    <p>L'agricultura basada en la permacultura es proposa entendre i potenciar el cicle natural de les plantes i el seu entorn, combinant-les entre elles i altres formes de vida per aconseguir un sistema que funcioni quasi independentment de la intervenció humana, al mateix temps que produeix aliments.</p>
   </div>
 </div>
 
 <footer>
-  <div class="footer"><p data-i18n="footer"></p>
+  <div class="footer"><p>Tots els drets reservats, © copyright 2023</p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="/assets/script.js"></script>
     </body>
 
     
