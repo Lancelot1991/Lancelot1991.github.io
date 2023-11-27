@@ -1,0 +1,1 @@
+A partir d'aquesta versió, probem de fer el canvi d'idioma en una plana diferent, en comptes de carregant diferents idiomes en el mateix html
