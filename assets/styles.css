@@ -12,13 +12,15 @@
     --accent-color: rgb(0, 39, 0);
     --text-color: black;
     --background-color: white;
+    --margin-side-desktop: 10px;
+    --margin-side-mobile: 7px;
 }
 
 .night-mode{
     --accent-background-color:rgba(0, 34, 0, 0.096);
     --accent-color: rgb(203, 240, 203);
     --text-color: rgb(255, 255, 255);
-    --background-color: rgb(1,4,9);
+    --background-color: rgb(12,13,14);
 }
 
 .light-btn{
@@ -39,14 +41,14 @@ div, .logo-wrap{
     justify-content: center;
     align-items: center;
 }
-
+/* 
 select{
-    /* border: 1px solid var(--text-color); */
+    border: 1px solid var(--text-color);
     border: none;
     border-radius: 0px;
     padding: 4px;
     margin-left: 5px;
-}
+} */
 
 .language>a{
     font-size: small;
@@ -153,6 +155,7 @@ select{
     justify-content: start;
     align-items: start;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .link{
@@ -239,13 +242,13 @@ p{
 .contacte{
     max-width: 1000px;
     margin: auto;
+    justify-content: start;
 }
 .contacte>ul{
     max-width: 1000px;
-    margin: auto;
     font-size: xx-large;
     font-weight: 500;
-    padding-top: 200px;
+    padding-top: 50px;
 }
 
 .tg-wrap {
@@ -257,7 +260,7 @@ p{
     margin-top: 40px;
     max-width: 100%;
     text-align: center;
-    padding:0px 5px;
+    padding: 0px var(--margin-side-mobile); /*using the monile margin to display more content of the table*/
     }
 table {
     margin: auto;
@@ -297,6 +300,11 @@ tr:nth-child(2n-1)>td{
     display: none;
   }
 
+.map{
+    padding-top: 50px;
+    margin: auto;
+}
+
 @media (max-width: 1090px) {
     .header{
         height: 50px; 
@@ -327,8 +335,9 @@ tr:nth-child(2n-1)>td{
 
     .menu>a{
         font-size: small;
-        padding: 0px 5px;
+        padding: 0px var(--margin-side-mobile);
     }
+
     .eslogan{
         font-size: x-large;
     }
@@ -355,11 +364,11 @@ tr:nth-child(2n-1)>td{
         padding: 40px 0px 20px 0px;
     }
 
-    .intro, .card-wrap, .outro{
-        padding: 0px 7px;
+    .intro, .card-wrap, .outro, .contacte, .map{
+        padding: 0px var(--margin-side-mobile);
     }
 
-    .outro{
+    .outro, .map{
         padding-top: 30px;
     }
 
@@ -459,7 +468,7 @@ tr:nth-child(2n-1)>td{
       flex-direction: column;
       transition: translate var(--animation-timing);
       translate: 100%;
-      padding: 0.5rem 5px;
+      padding: 0.5rem 0;
       background-color: var(--background-color);
       color: var(--text-color);
       width: 100vw;
