@@ -1,0 +1,98 @@
+.post-container{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px 30px;
+    align-items: start;
+}
+
+.p-all, .top-content, .bot-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: none;
+}
+
+.p-all{
+    display: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    /* background-color: var(--accent-background-color); */
+    /* border-bottom: 1px solid var(--text-color); */
+}
+
+.top-content{
+    gap:10px;
+}
+.top-content>*{
+    background: none;
+}
+.card-img{
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.card-date, .card-title, .card-description, .card-mention{
+    color: var(--text-color);
+}
+
+.card-date{
+    font-style: italic;
+    font-size: small;
+    font-family: "roboto", sans-serif;
+    /* color: var(--accent-color); */
+}
+
+.card-title{
+    font-size: x-large;
+}
+
+.card-mention{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: small;
+    font-family: "roboto", sans-serif;
+    background: none;
+}
+.blog-content{
+ flex-direction: column;
+ gap: 40px;
+}
+
+#category-select{
+    padding: 10px 50px;
+    border: 1px solid var(--text-color);
+    border-radius: 99px;
+}
+
+#category-select>option{
+    padding: 5px;
+}
+#category-select:has(option:checked[value=p-all]) + .post-container > .p-all{
+    display: flex;
+}
+#category-select:has(option:checked[value=p-permaculture]) + .post-container > .p-permaculture{
+    display: flex;
+}
+#category-select:has(option:checked[value=p-bioarchitecture]) + .post-container > .p-bioarchitecture{
+    display: flex;
+}
+#category-select:has(option:checked[value=p-design]) + .post-container > .p-design{
+    display: flex;
+}
+
+@media (max-width: 1090px) {
+
+    .post-container{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 0px var(--margin-side-mobile);
+
+}}

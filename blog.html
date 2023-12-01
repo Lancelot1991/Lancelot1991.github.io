@@ -4,8 +4,10 @@
     <meta charset="UTF-8"/>
     <title>BEC | Blog</title>
     <link rel="stylesheet" href="/assets/styles.css"/>
+    <link rel="stylesheet" href="/assets/blog-style.css"/>
     <link rel="icon" href="/icons/mana_circle.svg">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.cdnfonts.com/css/utopia-std" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta description="Projectes de permacultura i bio-arquitectura per a organitzacions i particulrs. Si vols aprendre, tabé pots participar en les nostres activitats gratuites.">
 </head>
@@ -63,60 +65,77 @@
 </div>
 </header>
 
-<div class="title">Blog</div>
+<div class="titol">Blog</div>
 
-<select id="category-select" onchange="filterPost(value)">
-  <option value="permaculture" data-i18n="cat_permaculture"></option>
-  <option value="bioarquitecture" data-i18n="cat_bioarquitecture"></option>
-  <option value="design" data-i18n="cat_design"></option>
-
+<div class="blog-content">
+<select id="category-select">
+  <option value="p-all"selected>Totes les categories</option>
+  <option value="p-permaculture">Permacultura</option>
+  <option value="p-bioarchitecture">Bio-arquitectura</option>
+  <option value="p-design">Disseny</option>
 </select>
 
 <div class="post-container">
-  <a href="post.html" class="permaculture design">
-    <img href="https://www.fageda.com/wp-content/uploads/2023/03/Pau-Abel-La-Fageda.png" class="card-img">
-    <div class="card-date">
-      23 març 2023
-    </div>      
-    <div class="card-title">
-
-    </div>  
-    <div class="card-description">
-      
+  <a href="post.html" class="p-all p-permaculture" id="post-3">
+    <div class="top-content">
+      <img src="/images/permacultura.jpg" class="card-img">
+      <div class="card-date">
+        23 març 2023
+      </div>      
+      <div class="card-title">
+        Una vaca amb taques
+      </div>  
+      <div class="card-description">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ut officia dolor quaerat. Veritatis est excepturi at impedit voluptatibus. Adipisci aliquid laborum reprehenderit consequatur placeat sint maiores praesentium dolore eius!      </div>
+    </div>
+    <div class="bot-content">
+      <p class="card-mention">La vaca</p>
     </div>
   </a>
   
-  <a href="post.html" class="bioarquitecture design">
+  <a href="post.html" class="p-all p-bioarchitecture" id="post-2">
     <div class="top-content">
-      <img src="images/bioarquitectura.png" class="card-img">
-      <h4 class="card-title" data-i18n="card1-title"></h4>
+      <img src="/images/bioarquitectura.png" class="card-img">
+      <div class="card-date">
+        32 març 9923
+      </div>      
+      <div class="card-title">
+        Una vaca sense taques
+      </div>  
+      <div class="card-description">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, est sunt eaque magnam quia soluta reprehenderit facere quis commodi velit repellat minus maxime iste nobis vitae, temporibus fugiat omnis adipisci!      </div>
     </div>
     <div class="bot-content">
-      <p class="card-description" data-i18n="card1-description"></p>
-      <p class="card-date" data-i18n="card1-date"></p>
+      <p class="card-mention">La no vaca</p>
+    </div>
+  </a>
+
+  <a href="post.html" class="p-all p-design" id="post-1">
+    <div class="top-content">
+      <img src="/images/arquitectura.jpg" class="card-img">
+      <div class="card-date">
+        32 març 9423
+      </div>      
+      <div class="card-title">
+        Una vaca amb i sense taques
+      </div>  
+      <div class="card-description">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, est sunt eaque magnam quia soluta reprehenderit facere quis commodi velit repellat minus maxime iste nobis vitae, temporibus fugiat omnis adipisci!      </div>
+    </div>
+    <div class="bot-content">
+      <p class="card-mention">La potser vaca</p>
     </div>
   </a>
 </div>
-
-
-
-
-
-<div class="card-wrap">
-  <div class="card">
-    <h3 data-i18n="bioarquitectura"></h3>
-    <img src="/images/bioarquitectura.png">
-    <p data-i18n="bioarquitectura_des"></p>
-  </div>
-  <div class="card">
-    <h3 data-i18n="permacultura"></h3>
-    <img src="/images/permacultura.jpg">
-    <p data-i18n="permacultura_des"></p>
-  </div>
 </div>
 
 <footer>
   <div class="footer"><p>Tots els drets reservats, © copyright 2023</p>
+  </div>
+  <div class="legal-links">
+    <a href="politica-cookies.html">Política de Cookies</a>
+    <a href="politica-privadesa.html">Política de Privadesa</a>
+    <a href="avis-legal.html">Avís Legal</a>
   </div>
 </footer>
 
