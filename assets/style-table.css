@@ -1,0 +1,36 @@
+.tg-wrap {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    max-width: 100%;
+    text-align: center;
+    padding: 0px var(--margin-side-mobile); /*using the monile margin to display more content of the table*/}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 0.9em !important;
+    text-align: right !important;
+    vertical-align: middle !important;
+    box-shadow: 2px 2px 5px rgb(221, 221, 221);
+    border-radius: 5px 5px 0 0 !important;
+    overflow: hidden; /*if the overflow isn't hidden, the border radius dosn't work*/}
+tr{
+    border-bottom: 1px solid var(--accent-color);}
+tbody tr:last-of-type{
+    border-bottom: 2px solid var(--accent-color);}
+th, td {
+    padding: 5px 10px !important;
+    border: 0px !important;
+    vertical-align: middle !important;}
+td{
+    white-space: nowrap;}
+tr:nth-child(2n){
+    background-color: var(--accent-background-color);
+    border-bottom: 2px solid var(--accent-color);}
+tr:nth-child(2n-1)>td{
+    background-color: var(--background-color);}
+@media (max-width: 1090px) {
+}
