@@ -1,0 +1,38 @@
+.column-wrap{
+    align-items: start;
+    gap:20px;
+}
+.column{
+    width: 50%;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+}
+.column--horizontal{
+    flex-direction: row;
+}
+.column__title{
+    width: 100%;
+    font-size: medium;
+    font-family: var(--font-title);
+    letter-spacing: .05em;
+    font-weight: 600;
+}
+.column__img{
+    width: 100%;
+}
+.column__text{
+    font-size: medium;
+}
+@media (max-width: 1090px){
+    .column-wrap{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .column{
+        width: 100%;
+    }
+    .column>h2{
+        font-size: large;
+    }
+}
