@@ -4,33 +4,60 @@
     /* font-family: "Roboto", sans-serif; */
     font-family: "Open Sans", sans-serif;
     letter-spacing: .03em;
-    color: var(--text-color);
+    color: var(--text-color-0);
+    box-sizing: border-box;
     /* background-color: var(--background-color); */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 :root{
-    --accent-background-color:rgba(0, 39, 0, 0.048);
-    /*#00160b dark green forest MTG
-      #9bd3ae light green forest MTG*/
-    --accent-color: #00160b; /*rgb(0, 43, 0);*/
-    --accent-color-2: rgb(0, 110, 110);
-    /* --text-color:rgb(29,62,151); És el color blau de La Fageda */
-    --text-color: #11887b;
-    --background-color: white;
+      /*#00160b dark green forest MTG
+      #9bd3ae light green forest MTG
+      rgb(29,62,151) És el color blau de La Fageda */
+    
+    --text-color-0: rgb(1,50,32);/* #11887b;*/
+    --text-color-1: white;
+    --text-color-2: black;
+    --background-color-0: white;
+    --background-color-1: #CFE5C7; /*Fageda*/
+    --background-color-2: #FDFCF5; /*Fageda*/
+    --background-color-3: #B5CFEE; /*Fageda*/
+    --background-color-4: rgb(29,62,151); /*Fageda*/
+    --background-color-5: #EF8F52; /*Fageda*/
+    --background-color-6: rgb(1,50,32); /*Mateix que color 0 de text*/
+    --background-color-7: black;
+    
     --margin-side-desktop: 10px;
     --margin-side-mobile: 7px;
     --content-width: 1200px;
     --font-title: "Noto Serif", serif;
 }
 .night-mode{
-    --accent-background-color:rgb(0, 5, 0);
+
+    --text-color-0: rgb(200, 204, 208);/* #11887b;*/
+    --text-color-1: rgb(200, 204, 208);
+    --text-color-2: rgb(200, 204, 208);
+    --background-color-0: rgb(12,13,14);
+    --background-color-1: black; /*Fageda*/
+    --background-color-2: black; /*Fageda*/
+    --background-color-3: black; /*Fageda*/
+    --background-color-4: black; /*Fageda*/
+    --background-color-5: black; /*Fageda*/
+    --background-color-6: black;
+    --background-color-7: black;
+
+
+    /* --accent-background-color:rgb(0, 5, 0);
     --accent-color: rgb(250, 255, 250);
     --accent-color-2: rgb(0, 125, 197);
     --text-color: rgb(200, 204, 208);
     --background-color: rgb(12,13,14);
+    --background-green: rgb(0, 5, 0);
+    --background-blue: rgb(0, 5, 0);
+    --color-1: black;
+    --color-2:white; */
 }
 body{
-    background-color: var(--background-color);
+    background-color: var(--background-color-0);
 }
 a{
     text-decoration: none;
@@ -58,8 +85,8 @@ section{
 .header{
     width: 100%;
     height: 70px; 
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--text-color-0);
+    background-color: var(--background-color-0);
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -71,10 +98,10 @@ section{
 }
 .logo{
     padding-left: 20px;
-    fill: var(--text-color);
-    margin-top: -33px;
-    width: 60px;
-    height: 60px;
+    fill: var(--text-color-0);
+    margin-top: -35px;
+    width: 80px;
+    height: 80px;
 }
 .desktop{
     justify-content: end;
@@ -86,21 +113,16 @@ section{
     font-weight: 600;
 }
 .menu>a{
-    color: var(--text-color);
     text-decoration: none;
     text-transform: uppercase;
     font-size: small;
-    /* font-family: var(--font-title); */
     letter-spacing: .11em;
     padding: 0px 10px;
     font-weight: 700;
 }
 .menu>a:hover{
     text-decoration: underline;
-}
-.language>a{
-    color: var(--text-color);
-    /* font-family: var(--font-title); */
+    text-underline-offset: .4em;
 }
 .light-btn{
     margin-left: 15px;
@@ -162,17 +184,14 @@ main{
     font-weight: 300;
 }
 .link-wrap, .btn-wrap{
+    width: 100%;
     justify-content: start;
     gap: 10px;
     flex-wrap: wrap;
 }
 .link{
-    color: var(--text-color);
-    /* background-color: var(--accent-background-color); */
-    border-left: 1px solid var(--text-color);
-    /* border-radius: 50px; */
+    border-left: 1px solid var(--text-color-0);
     padding: 7px 15px;
-    /* font-family: var(--font-title); */
     text-transform: uppercase;
     font-size: x-small;
     font-weight: 400;
@@ -180,10 +199,14 @@ main{
 .link:after{
     content: " ⧉";
 }
+.link:hover{
+    text-decoration: underline;
+    text-underline-offset: .4em;
+}
 .btn{
     margin-top: 20px;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
+    color: var(--text-color-0);
+    border: 1px solid var(--text-color-0);
     border-radius: 99px;
     padding: 15px 30px;
     text-transform: uppercase;
@@ -191,8 +214,21 @@ main{
     font-weight: 800;
 }
 .btn:hover{
-    color: var(--background-color);
-    background-color: var(--text-color);    
+    color: var(--background-color-0);
+    background-color: var(--text-color-0);    
+}
+.btn--black:hover{
+    color: var(--background-color-0);
+    border-color: var(--text-color-2);
+    background-color: var(--text-color-2);    
+}
+.btn--1-on-6{
+    color: var(--text-color-1);
+    border-color: var(--text-color-1);
+}
+.btn--1-on-6:hover{
+    color: var(--background-color-6);
+    background-color: var(--text-color-1);
 }
 .column-wrap{
     gap:20px;
@@ -221,7 +257,7 @@ main{
     font-weight: 500;
 }
 .img-wrap{
-    background-image: url("/images/reciclat.jpg");
+    /* background-image: url("/images/reciclat.jpg"); */
     width: 100vw;
     max-width: 100vw;
 }
@@ -233,11 +269,33 @@ main{
     gap: 0px;
 }
 .content-width{
-    width: var(--content-width);
+    max-width: var(--content-width);
     margin: auto;
 }
 .white{
     color: white;
+    border-color: white;
+}
+.bkg-trans{
+    background-color: transparent;
+}
+.bkg-1{
+    background-color: var(--background-color-1);
+}
+.bkg-2{
+    background-color: var(--background-color-2);
+}
+.bkg-3{
+    background-color: var(--background-color-3);
+}
+.bkg-4{
+    background-color: var(--background-color-4);
+}
+.bkg-5{
+    background-color: var(--background-color-5);
+}
+.bkg-6{
+    background-color: var(--background-color-6);
 }
 
 /* TESTING MEDIA WITH GRID*/
@@ -249,7 +307,6 @@ main{
     grid-template-areas: 
         "image cont"
         "image footer";
-    background-color: var(--text-color);
 }
 .media--reversed{
     grid-template-areas: 
@@ -261,7 +318,6 @@ main{
     grid-template-rows: auto;
     grid-template-areas: 
         "image cont";
-    background-image: url("/images/reciclat.jpg");
 }
 .media__title{
     font-family: var(--font-title);
@@ -274,7 +330,7 @@ main{
     object-fit: cover !important;
 }
 .media__content{
-    padding: 20px 100px;
+    padding: 20px 50px;
     flex-direction: column;
     grid-area: cont;
     gap: 20px;
@@ -297,12 +353,12 @@ main{
 }
 footer{
     margin-top: 200px;
-    background-color: var(--accent-background-color);
-    border-top: 1px solid var(--accent-color);
+    background-color: var(--background-color-1);
+    border-top: 1px solid var(--text-color-0);
     padding: 70px 20px 30px 20px;
 }
 .footer>p{
-    color: var(--accent-color);
+    color: var(--text-color-0);
 }
 .legal-links{
     gap: 40px;
@@ -311,17 +367,13 @@ footer{
 .legal-links>a{
     font-family: var(--font-title);
     font-size: smaller;
-    color: var(--accent-color);
+    color: var(--text-color-0);
 }
 .legal-links>a:hover{
     text-decoration: underline;
 }
 
 @media (max-width: 1090px){
-    /* *{
-        padding: 0px;
-        margin: 0px;
-    } */
     section{
         padding: 25px 0px;
         gap:20px;
@@ -333,10 +385,10 @@ footer{
     }
     .logo{
         padding-left: 20px;
-        fill: var(--text-color);
-        margin-top: -25px;
-        width: 45px;
-        height: 45px;
+        /* fill: var(--text-color); */
+        margin-top: -22px;
+        width: 60px;
+        height: 60px;
     }
     .desktop{
         display: none;
@@ -357,15 +409,15 @@ footer{
         display: none;
     }
     .circle{
-        fill: var(--background-color);
+        fill: var(--background-color-0);
     }
     .tree{
-        fill: var(--text-color);
+        fill: var(--text-color-0);
     }
     .content-width{
-        width: auto;
-        max-width: 100%;
         padding: 0px var(--margin-side-mobile);
+        /* align-items: start;
+        justify-content: start; */
     }
     /*#00160b dark green forest MTG
     #9bd3ae light green forest MTG*/
@@ -377,13 +429,13 @@ footer{
     }
     .dropdown-content{
         position: fixed;
-        top: 47px;
+        top: 45px;
         left: 0px;
         display: flex;
         flex-direction: column;
         align-items: start;
-        border-bottom: 1px solid var(--text-color);
-        background-color: var(--background-color);
+        border-bottom: 1px solid var(--text-color-0);
+        background-color: var(--background-color-0);
     }
     .menu{
         padding: 10px 0px;
@@ -405,7 +457,7 @@ footer{
     }
     .language>a{
         padding: 0px;
-        color: var(--text-color);
+        /* color: var(--text-color); */
     }
     #light-btn2{
         margin-left: 15px;
@@ -447,7 +499,6 @@ footer{
             "image"
             "cont"
             "footer";
-        background-color: var(--text-color);
         padding-bottom: 30px;
     }
     .media--reversed{
