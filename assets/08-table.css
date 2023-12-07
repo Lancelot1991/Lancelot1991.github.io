@@ -7,30 +7,51 @@
     margin-top: 40px;
     max-width: 100%;
     text-align: center;
-    padding: 0px var(--margin-side-mobile); /*using the monile margin to display more content of the table*/}
+    padding: 0px var(--margin-side-mobile); /*using the monile margin to display more content of the table*/
+    /* border: 1px solid white; */
+}
 table {
     margin: auto;
+    width: 1500px;
     border-collapse: collapse;
     font-size: 0.9em !important;
     text-align: right !important;
     vertical-align: middle !important;
-    box-shadow: 2px 2px 5px rgb(221, 221, 221);
+    /* box-shadow: 1px 1px 1px rgb(221, 221, 221); */
     border-radius: 5px 5px 0 0 !important;
-    overflow: hidden; /*if the overflow isn't hidden, the border radius dosn't work*/}
+    overflow: hidden; /*if the overflow isn't hidden, the border radius dosn't work*/
+}
 tr{
-    border-bottom: 1px solid var(--accent-color);}
+    border-bottom: 1px solid;
+}
 tbody tr:last-of-type{
-    border-bottom: 2px solid var(--accent-color);}
+    border-bottom: 2px solid;
+}
 th, td {
     padding: 5px 10px !important;
     border: 0px !important;
-    vertical-align: middle !important;}
+    vertical-align: middle !important;
+}
+th{
+    text-transform: capitalize;
+}
 td{
-    white-space: nowrap;}
+    white-space: wrap;
+    max-width: 300px;
+    min-width: 100px;
+    height: 70px;
+}
+td:nth-child(2), td:nth-child(1){
+    text-transform: uppercase;
+    width: 130px !important;
+    text-align: left;
+}
 tr:nth-child(2n){
-    background-color: var(--accent-background-color);
-    border-bottom: 2px solid var(--accent-color);}
-tr:nth-child(2n-1)>td{
-    background-color: var(--background-color);}
+    /* background-color: var(--background-color-1); */
+    border-bottom: 2px solid;
+}
+/* tr:nth-child(2n-1)>td{
+    background-color: var(--background-color-1);
+} */
 @media (max-width: 1090px) {
 }

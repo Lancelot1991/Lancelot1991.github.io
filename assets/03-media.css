@@ -18,6 +18,13 @@
     grid-template-areas: 
         "image cont";
 }
+.media--nested{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "image1 cont1 cont"
+        "cont2 image2 cont";
+}
 .media__title{
     font-family: var(--font-title);
 }
@@ -34,6 +41,7 @@
     grid-area: cont;
     gap: 20px;
     align-items: start;
+    height: 100%;
 }
 .media__content--reversed{
     padding: 20px 50px 20px 20%;

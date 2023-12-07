@@ -4,11 +4,19 @@
     padding-left: var(--margin-side-desktop);
     padding-right: var(--margin-side-desktop);
 }
+.padding-top-30{
+    padding-top: 30px;
+}
 .text-color-0{
     color: var(--text-color-0);
 }
+.flex-column{
+    flex-direction: column;
+    align-items: start;
+}
 .text-color-1{
     color: var(--text-color-1);
+    border-color: var(--text-color-1);
 }
 .text-color-2{
     color: var(--text-color-2);
@@ -24,10 +32,6 @@
 }
 .gap-small{
     gap: 20px;
-}
-.white{
-    color: white;
-    border-color: white;
 }
 .bkg-trans{
     background-color: transparent;
@@ -49,4 +53,7 @@
 }
 .bkg-6{
     background-color: var(--background-color-6);
+}
+.bkg-7{
+    background-color: var(--background-color-7);
 }

@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 .link{
-    border-left: 1px solid var(--text-color-0);
+    border-left: 1px solid;
     padding: 7px 15px;
     text-transform: uppercase;
     font-size: x-small;
@@ -20,8 +20,8 @@
 }
 .btn{
     margin-top: 20px;
-    color: var(--text-color-0);
-    border: 1px solid var(--text-color-0);
+    /* color: var(--text-color-0); */
+    border: 1px solid;/* var(--text-color-0);*/
     border-radius: 99px;
     padding: 15px 30px;
     text-transform: uppercase;
@@ -40,14 +40,26 @@
     border-color: var(--text-color-2);
     background-color: var(--text-color-2);    
 }
-.btn--1-on-6{
+.btn--color-1{
     color: var(--text-color-1);
     border-color: var(--text-color-1);
 }
-.btn--1-on-6:hover{
-    color: var(--background-color-6);
+.btn--color-1:hover{
     background-color: var(--text-color-1);
 }
+.btn--bg-1:hover{
+    color: var(--background-color-1);
+}
+.btn--bg-4:hover{
+    color: var(--background-color-4);
+}
+.btn--bg-6:hover{
+    color: var(--background-color-6);
+}
+.btn--bg-7:hover{
+    color: var(--background-color-7);
+}
+
 
 @media (max-width: 1090px){
     .btn-wrap{

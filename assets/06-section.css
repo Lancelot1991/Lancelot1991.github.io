@@ -3,7 +3,8 @@ section{
     align-items: start;
 }
 .section--padding{
-    padding: 150px 0px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 .section--padding-asimetric{
     padding-top: 35px;
@@ -48,6 +49,7 @@ section{
 }
 .section__text{
     padding-top: 40px;
+    margin-right: auto;
 }
 .hero__title, .hero__subtitle{
     margin: 0 10%;
