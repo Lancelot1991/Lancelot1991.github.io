@@ -12,6 +12,8 @@
       /*#00160b dark green forest MTG
         #9bd3ae light green forest MTG
         rgb(29,62,151) És el color blau de La Fageda */
+    --mobile-breakpoint: 1090px;
+    --tablet-breakpoint: 1500px;
     
     --text-color-0: rgb(1,50,32);/* #11887b;*/
     --text-color-1: white;

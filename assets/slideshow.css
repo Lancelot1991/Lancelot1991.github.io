@@ -1,0 +1,119 @@
+/* Hide the images by default */
+.slide {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent), url("/images/labase1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    color: white;
+    gap: 30px;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+ /* .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+  
+  /* Number text (1/3 etc) */
+  /* .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+  
+  /* The dots/bullets/indicators */
+  .dot-wrap{
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    height: 100px;
+    margin-top: -100px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+    margin: 0 2px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    display: inline-block;
+    /* transition: background-color 0.3s ease-in-out; */
+  }
+  .dot:hover {
+    background-color: white;
+}
+  .active{
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Animations */
+  /* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .9}
+    to {opacity: 1}
+  }
+
+  .move-in{
+    animation-name: move-in;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes move-in{
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(0);
+    }
+  }
+  @keyframes move-out{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+  } */

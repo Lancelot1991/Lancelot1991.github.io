@@ -1,0 +1,13 @@
+.translate-animation{
+    animation-name: translate;
+    animation-duration: 2s;
+}
+
+@keyframes translate{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
