@@ -1,0 +1,203 @@
+/*HEADER*/
+.language>a{
+    font-size: small;
+    padding: 0px 5px;
+}
+.selected-lang{
+    font-weight: 700;
+}
+.header{
+    width: 100%;
+    height: var(--header-height-desktop); 
+    color: var(--text-color-0);
+    background-color: var(--background-color-0);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* border-bottom: 2px solid;
+    border-color:  var(--text-color); */
+}
+.header__left{
+    /* width: 150px; */
+    justify-content: start;
+    padding-left: 20px;
+}
+.header__right{
+    /* width: 150px; */
+    justify-content: end;
+    padding-right: 20px;
+}
+
+.logo{
+    fill: var(--text-color-0);
+    margin-top: -35px;
+    width: 60px;
+    height: 60px;
+}
+.menu{
+    gap: 10px;
+    font-weight: 600;
+}
+.menu>a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: .11em;
+    padding: 0px 10px;
+    font-weight: 700;
+}
+.menu>a:hover{
+    text-decoration: underline;
+    text-underline-offset: .7em;
+}
+.menu--small{
+    padding-right: 10%;
+}
+.menu--small>a{
+    font-family: var(--font-title);
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.active-page{
+    text-decoration: underline !important;
+    text-underline-offset: .7em;
+}
+.light-btn{
+    margin-left: 15px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+details{
+    display: none;
+}
+
+/*FOOTER*/
+footer{
+    margin-top: 200px;
+    padding: 200px 20px 100px 20px;
+    background-color: var(--background-color-0);
+    border-top: 1px solid var(--text-color-0);
+}
+.footer>p{
+    color: var(--text-color-0);
+}
+.legal-links{
+    gap: 40px;
+    padding-top: 40px;
+}
+.legal-links>a{
+    font-family: var(--font-title);
+    font-size: smaller;
+    color: var(--text-color-0);
+}
+.legal-links>a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1500px){
+    .menu{
+        gap: 5px;
+        font-weight: 600;
+    }
+    .menu>a{
+        font-size: 11px;
+        letter-spacing: .11em;
+        padding: 0px 10px;
+        font-weight: 700;
+    }
+    .language>a{
+        font-size: 11px;
+        padding: 0px 5px;
+    }
+}
+
+
+@media (max-width: 1090px){
+    .header{
+        height: var(--header-height-mobile); 
+        /* border-bottom: 2px solid var(--text-color); */
+    }
+    .logo{
+        padding-left: -10px;
+        /* fill: var(--text-color); */
+        margin-top: -22px;
+        width: 45px;
+        height: 45px;
+    }
+    .desktop{
+        display: none;
+    }
+    details{
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+    }
+    summary {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    } 
+    /* Hide arrow glyph in Safari */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    .circle{
+        fill: var(--background-color-0);
+    }
+    .tree{
+        fill: var(--text-color-0);
+    }
+    /*#00160b dark green forest MTG
+    #9bd3ae light green forest MTG*/
+    details[open] .circle{
+        fill: #9bd3ae;
+    }
+    details[open] .tree{
+        fill: #00160b;
+    }
+    .dropdown-content{
+        position: fixed;
+        top: 45px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-bottom: 4px solid var(--text-color-0);
+        background-color: var(--background-color-0);
+        padding: 0px var(--margin-side-mobile);
+        width: 100%;
+    }
+    .menu{
+        padding: 20px 0px;
+        gap: 15px;
+        /* display: flex;*/
+        flex-direction: column;
+        border-bottom: 1px solid var(--text-color-0);
+        width: 100%;
+    }
+    .menu>a{
+        font-size: small;
+        padding: 0px;
+        width: 100%;
+    }
+    .language{
+        /* display: flex;
+        justify-content: start;
+        align-items: center; */
+        padding: 20px 0px;
+        gap: 15px;
+    }
+    .language>a{
+        padding: 0px;
+        /* color: var(--text-color); */
+    }
+    #light-btn2{
+        margin-left: 15px;
+    }
+}

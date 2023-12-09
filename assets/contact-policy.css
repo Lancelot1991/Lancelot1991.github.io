@@ -1,0 +1,29 @@
+/*CONTACT*/
+.contact-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: start;
+}
+.contact-data{
+    font-size: x-large;
+    font-weight: 500;
+}
+.map{
+    width:100%;
+    padding-top: 50px;
+    /* border-color: red; */
+}
+/*POLICY*/
+.legal{
+    max-width: var(--content-width);
+    padding-top: 100px;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-self: center;
+}
+.legal>h3{
+    padding-top: 20px;
+}
