@@ -29,8 +29,8 @@
     --background-color-6: rgb(1,50,32); /*Mateix que color 0 de text*/
     --background-color-7: black;
     
-    --margin-side-desktop: 10px;
-    --margin-side-mobile: 7px;
+    --margin-side-desktop: 15px;
+    --margin-side-mobile: 12px;
     --content-width: 1200px;
     --font-title: "Noto Serif", serif;
     --header-height-desktop: 70px;

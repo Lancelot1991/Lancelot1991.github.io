@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 1090px){
+    .content-width{
+        padding-left: var(--margin-side-mobile);
+        padding-right: var(--margin-side-mobile);
+    }
     .padding-left-small{
         padding-left: var(--margin-side-mobile);
     }

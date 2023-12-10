@@ -92,8 +92,8 @@
 
   <section class="section">
     <div class="blog-content content-width">
-      <select id="category-select">
-        <option value="all" selected>Totes les categories</option>
+      <select id="category-select" onchange="filterCategory(value)">
+        <option value="post" selected>Totes les categories</option>
         <option value="permaculture">Permacultura</option>
         <option value="bioarchitecture">Bio-arquitectura</option>
         <option value="design">Disseny</option>
@@ -102,7 +102,7 @@
 
       <div class="post-container padding-top-large">
       <!-- ÒSCAR -->
-        <a href="post.html" class="all permaculture oscar" id="post-3">
+        <a href="post.html" class="post permaculture oscar" id="post-3">
           <div class="top-content">
             <img src="/images/permacultor.jpg" class="card-img">
             <div class="card-date">
@@ -121,7 +121,7 @@
         </a>
       
       <!-- TITOL -->
-        <a href="post.html" class="all permaculture" id="post-3">
+        <a href="post.html" class="post permaculture" id="post-3">
           <div class="top-content">
             <img src="/images/permacultura.jpg" class="card-img">
             <div class="card-date">
@@ -140,7 +140,7 @@
         </a>
       
       <!-- TITOL -->
-        <a href="post.html" class="all bioarchitecture" id="post-2">
+        <a href="post.html" class="post bioarchitecture" id="post-2">
           <div class="top-content">
             <img src="/images/bioarquitectura.png" class="card-img">
             <div class="card-date">
@@ -159,7 +159,7 @@
         </a>
         
       <!-- TITOL -->
-        <a href="post.html" class="all design" id="post-1">
+        <a href="post.html" class="post design" id="post-1">
           <div class="top-content">
             <img src="/images/arquitectura.jpg" class="card-img">
             <div class="card-date">
@@ -193,6 +193,7 @@
 </footer>
 
 <script type="module" src="/assets/cookieconsent-config.js"></script>
+<script src="/assets/blog.js"></script>
 <script src="/assets/script.js"></script>
 
 </body>
