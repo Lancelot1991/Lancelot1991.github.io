@@ -53,6 +53,9 @@
 .btn--bg-4:hover{
     color: var(--background-color-4);
 }
+.btn--bg-5:hover{
+    color: var(--background-color-5);
+}
 .btn--bg-6:hover{
     color: var(--background-color-6);
 }

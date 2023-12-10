@@ -24,12 +24,15 @@ window.addEventListener('scroll', () => {
 document.addEventListener("DOMContentLoaded", function() {
 
   menuIcon.addEventListener("mouseenter", function() {
+    if(!dropdown.open){
       dropdown.setAttribute("open", "open");
+    }
   });
   content.addEventListener("mouseleave", function() {
-    dropdown.removeAttribute("open");
-  })
-
+    if(dropdown.open){
+      dropdown.removeAttribute("open");
+    }
+  });
 });
 
 

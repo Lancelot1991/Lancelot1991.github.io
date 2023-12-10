@@ -35,6 +35,9 @@
 .padding-left-small{
     padding-left: var(--margin-side-desktop);
 }
+.margin-bot-mid{
+    margin-bottom: 60px;
+}
 .text-color-0{
     color: var(--text-color-0);
 }
