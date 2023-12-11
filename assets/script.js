@@ -1,4 +1,41 @@
 //HIDE-SHOW HEADER
+// let lastScrollTop = 0;
+// const header = document.getElementById('header-hide');
+// const dropdown = document.getElementById('dropdown');
+// const menuIcon = document.getElementById('menu-icon'); 
+// const content = document.getElementById('dropdown-content');
+
+// window.addEventListener('scroll', () => {
+//     const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+//     if(!dropdown.open){//the header should stay when the dropdown is opened
+//       if (scrollTop > lastScrollTop && scrollTop > 500) {
+//           // Scrolling down
+//           header.style.top = `-${header.offsetHeight}px`;
+//       } else {
+//           // Scrolling up
+//           header.style.top = '0';
+//       }
+//     }
+//     lastScrollTop = scrollTop;
+// });
+
+// //DISPLAY DROPDOWN ON HOVER
+// document.addEventListener("DOMContentLoaded", function() {
+
+//   menuIcon.addEventListener("mouseenter", function() {
+//     if(!dropdown.open){
+//       dropdown.setAttribute("open", "open");
+//     }
+//   });
+//   content.addEventListener("mouseleave", function() {
+//     if(dropdown.open){
+//       dropdown.removeAttribute("open");
+//     }
+//   });
+// });
+
+
 let lastScrollTop = 0;
 const header = document.getElementById('header-hide');
 const dropdown = document.getElementById('dropdown');
@@ -21,19 +58,25 @@ window.addEventListener('scroll', () => {
 });
 
 //DISPLAY DROPDOWN ON HOVER
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
 
-  menuIcon.addEventListener("mouseenter", function() {
-    if(!dropdown.open){
-      dropdown.setAttribute("open", "open");
-    }
-  });
-  content.addEventListener("mouseleave", function() {
-    if(dropdown.open){
-      dropdown.removeAttribute("open");
-    }
-  });
-});
+//   menuIcon.addEventListener("mouseenter", function() {
+//     if(!dropdown.open){
+//       dropdown.setAttribute("open", "open");
+//     }
+//   });
+//   content.addEventListener("mouseleave", function() {
+//     if(dropdown.open){
+//       dropdown.removeAttribute("open");
+//     }
+//   });
+// });
+
+
+
+
+
+
 
 
 

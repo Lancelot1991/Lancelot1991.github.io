@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/assets/modifiers.css"/>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.17/dist/cookieconsent.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="/icons/mana_circle.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,13 +35,22 @@
     <!-- Desktop menu -->
     <div class="header-center">
       <nav class="menu desktop">
-          <a href="/projecte.html">El projecte</a>
-          <a href="/productes.html">Productes</a>
-          <a href="/voluntariat.html">Voluntariat</a>
-          <a href="/practiques.html">Pràctiques</a>
-          <a href="/events.html">Events</a>
-          <a href="/visites.html">Visites</a>
-          <a href="/activitats.html">Activitats</a>
+        <a href="/projecte.html">El projecte</a>
+        <a href="/productes.html">Productes</a>
+        <a href="/voluntariat.html">Voluntariat</a>
+        <a href="/practiques.html">Pràctiques</a>
+        <div class="sub-menu">
+          <a href="" class="sub-menu__title">
+            Visites
+          </a>
+          <nav class="sub-menu__content">
+            <a href="/visites/activitats.html">Activitats</a>
+            <a href="/visites/formacions.html">Formacions</a>
+            <a href="/visites/escoles-agencies.html">Escoles i agencies</a>
+            <a href="/visites/petits-agricultors.html">Petits agricultors</a>
+            <a href="/visites/que-fer-al-montseny.html">Que fer al Montseny?</a>
+          </nav>
+        </div>
       </nav>
     </div>
     <div class="desktop header__right">
@@ -85,6 +96,53 @@
 </header>
 
 <main id="index">
+
+  <section class="slideshow-container">
+    <div class="slides">
+      <div class="slide" id="slide1">
+        <picture class="slide__picture">
+          <source media="(max-width: 800px)" srcset="/images/arquitectura.jpg">
+          <img class="slide__img" src="/images/labase1.jpg">
+        </picture>
+        <div class="slide__content">
+          <h1 class="hero__title">Agricultura i bio-arquitectura per a un món més verd</h1>
+          <h3 class="hero__subtitle">Sostenibilitat des de la falda del Montseny</h3>
+        </div>
+      </div>
+      <div class="slide" id="slide2">
+        <picture class="slide__picture">
+          <source media="(max-width: 800px)" srcset="/images/arquitectura.jpg">
+          <img class="slide__img" src="/images/arquitectura2.jpg">
+        </picture>
+        <div class="slide__content">
+          <h1 class="hero__title">Xocolata i patates per a un món més agradable</h1>
+          <h3 class="hero__subtitle">Gula des de la falda del Montseny</h3>
+        </div>
+      </div>
+      <div class="slide" id="slide3" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent), url(/images/orchard.jpeg);">
+          <h1 class="hero__title">Fruita i verdura per a un món més saludable</h1>
+          <h3 class="hero__subtitle">Salut des de la falda del Montseny</h3>
+      </div>
+      <div class="slide" id="slide4" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent), url(/images/organic-veg.jpg);">
+        <h1 class="hero__title">Xocolata i patates per a un món més agradable</h1>
+        <h3 class="hero__subtitle">Gula des de la falda del Montseny</h3>
+      </div>
+      <div class="slide" id="slide5" style="background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), transparent), url(/images/calçots.png);">
+          <h1 class="hero__title">Fruita i verdura per a un món més saludable</h1>
+          <h3 class="hero__subtitle">Salut des de la falda del Montseny</h3>
+      </div>
+    </div>
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide = 1; showSlide(currentSlide - 1)"></span>
+        <span class="dot" onclick="currentSlide = 2; showSlide(currentSlide - 1)"></span>
+        <span class="dot" onclick="currentSlide = 3; showSlide(currentSlide - 1)"></span>
+        <span class="dot" onclick="currentSlide = 4; showSlide(currentSlide - 1)"></span>
+        <span class="dot" onclick="currentSlide = 5; showSlide(currentSlide - 1)"></span>
+    </div>
+  </section>
+
+
+
 
   <section class="slideshow-container">
     <div class="slides">
@@ -218,7 +276,7 @@
           <a class="link" href="https://ca.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
         </div>
         <div class="btn-wrap">
-          <a class="btn btn--color-1 btn--bg-6" href="/contacte.html">Estem al Vallès</a>
+          <a class="btn btn--color-1 btn--bg-6" href="/contacte.html">Vina al Vallès</a>
         </div>
       </div>
       <img class="media__img" src="/images/labase1.jpg" loading="lazy">

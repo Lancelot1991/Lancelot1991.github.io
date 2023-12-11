@@ -1,11 +1,4 @@
 /*HEADER*/
-.language>a{
-    font-size: small;
-    padding: 0px 5px;
-}
-.selected-lang{
-    font-weight: 700;
-}
 .header{
     width: 100%;
     height: var(--header-height-desktop); 
@@ -44,18 +37,49 @@
     gap: 10px;
     font-weight: 600;
 }
-.menu>a{
+.menu a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: small;
     letter-spacing: .11em;
     padding: 0px 10px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
-.menu>a:hover{
+.menu a:hover{
     text-decoration: underline;
     text-underline-offset: .7em;
 }
+
+.sub-menu__title{
+    border: none;
+    background: none;
+    height: var(--header-height-desktop); /*important that the sub-menu__title is touching the sub-menu__content*/
+}
+/* .sub-menu__title::after{
+    content: "\2002 \2B";
+} */
+.sub-menu__content{
+    display: none;
+    position: absolute;
+    background-color: var(--background-color-0);
+    align-items: start;
+    top: var(--header-height-desktop);
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px var(--margin-side-mobile);
+}
+.sub-menu__content a{
+    height: auto;
+    width: 100%;
+}
+.sub-menu:hover .sub-menu__content{
+    display: flex;
+}
+/* .sub-menu:hover .sub-menu__title::after{
+    content: "\2002 \2212";
+} */
 .menu--small{
     padding-right: 10%;
 }
@@ -68,13 +92,20 @@
     text-decoration: underline !important;
     text-underline-offset: .7em;
 }
+.language>a{
+    font-size: small;
+    padding: 0px 5px;
+}
+.selected-lang{
+    font-weight: 700;
+}
 .light-btn{
     margin-left: 15px;
     cursor: pointer;
     height: 20px;
     width: 20px;
 }
-details{
+#dropdown{
     display: none;
 }
 
@@ -100,6 +131,16 @@ footer{
 .legal-links>a:hover{
     text-decoration: underline;
 }
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+} 
+/* Hide arrow glyph in Safari */
+summary::-webkit-details-marker {
+    display: none;
+}
 
 
 @media (max-width: 1500px){
@@ -107,7 +148,7 @@ footer{
         gap: 5px;
         font-weight: 600;
     }
-    .menu>a{
+    .menu a{
         font-size: 11px;
         letter-spacing: .11em;
         padding: 0px 10px;
@@ -120,7 +161,7 @@ footer{
 }
 
 
-@media (max-width: 1090px){
+@media (max-width: 500px){
     .header{
         height: var(--header-height-mobile); 
         /* border-bottom: 2px solid var(--text-color); */
@@ -135,21 +176,11 @@ footer{
     .desktop{
         display: none;
     }
-    details{
+    #dropdown{
         display: flex;
         align-items: center;
         padding-right: 20px;
         position: relative;
-    }
-    summary {
-        list-style: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    } 
-    /* Hide arrow glyph in Safari */
-    summary::-webkit-details-marker {
-        display: none;
     }
     .circle{
         fill: var(--background-color-0);
@@ -159,10 +190,10 @@ footer{
     }
     /*#00160b dark green forest MTG
     #9bd3ae light green forest MTG*/
-    details[open] .circle{
+    #dropdown[open] .circle{
         fill: #9bd3ae;
     }
-    details[open] .tree{
+    #dropdown[open] .tree{
         fill: #00160b;
     }
 
