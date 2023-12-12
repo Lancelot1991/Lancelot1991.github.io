@@ -1,78 +1,83 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: .03em;
-    color: inherit;
-    border-color: inherit;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.03em;
+  color: inherit;
+  border-color: inherit;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
 }
-:root{
-      /*#00160b dark green forest MTG
+:root {
+  /*#00160b dark green forest MTG
         #9bd3ae light green forest MTG
         rgb(29,62,151) És el color blau de La Fageda */
-    --mobile-breakpoint: 1090px;
-    --tablet-breakpoint: 1500px;
-    
-    --text-color-0: rgb(1,50,32);/* #11887b;*/
-    --text-color-1: white;
-    --text-color-2: black;
-    --text-color-3: rgb(29,62,151);
+  --mobile-breakpoint: 1090px;
+  --tablet-breakpoint: 1500px;
 
-    --background-color-0: white;
-    --background-color-1: #CFE5C7; /*Fageda*/
-    --background-color-2: #FDFCF5; /*Fageda*/
-    --background-color-3: #B5CFEE; /*Fageda*/
-    --background-color-4: rgb(29,62,151); /*Fageda*/
-    --background-color-5: #EF8F52; /*Fageda*/
-    --background-color-6: rgb(1,50,32); /*Mateix que color 0 de text*/
-    --background-color-7: black;
-    
-    --margin-side-desktop: 15px;
-    --margin-side-mobile: 12px;
-    --content-width: 1200px;
-    --font-title: "Noto Serif", serif;
-    --header-height-desktop: 70px;
-    --header-height-mobile: 50px;
+  --text-color-0: rgb(1, 50, 32); /* #11887b;*/
+  --text-color-1: white;
+  --text-color-2: black;
+  --text-color-3: rgb(29, 62, 151);
+
+  --background-color-0: white;
+  --background-color-1: #cfe5c7; /*Fageda*/
+  --background-color-2: #fdfcf5; /*Fageda*/
+  --background-color-3: #b5cfee; /*Fageda*/
+  --background-color-4: rgb(29, 62, 151); /*Fageda*/
+  --background-color-5: #ef8f52; /*Fageda*/
+  --background-color-6: rgb(1, 50, 32); /*Mateix que color 0 de text*/
+  --background-color-7: black;
+
+  --margin-side-desktop: 15px;
+  --margin-side-mobile: 12px;
+  --content-width: 1200px;
+  --font-title: "Noto Serif", serif;
+  --header-height-desktop: 70px;
+  --header-height-mobile: 50px;
 }
-.night-mode{
-    --text-color-0: rgb(200, 204, 208);/* #11887b;*/
-    --text-color-1: rgb(200, 204, 208);
-    --text-color-2: rgb(200, 204, 208);
-    --text-color-3: rgb(200, 204, 208);
-    --background-color-0: rgb(12,13,14);
-    --background-color-1: black; /*Fageda*/
-    --background-color-2: black; /*Fageda*/
-    --background-color-3: black; /*Fageda*/
-    --background-color-4: black; /*Fageda*/
-    --background-color-5: black; /*Fageda*/
-    --background-color-6: black;
-    --background-color-7: black;
+.night-mode {
+  --text-color-0: rgb(200, 204, 208); /* #11887b;*/
+  --text-color-1: rgb(200, 204, 208);
+  --text-color-2: rgb(200, 204, 208);
+  --text-color-3: rgb(200, 204, 208);
+  --background-color-0: rgb(12, 13, 14);
+  --background-color-1: black; /*Fageda*/
+  --background-color-2: black; /*Fageda*/
+  --background-color-3: black; /*Fageda*/
+  --background-color-4: black; /*Fageda*/
+  --background-color-5: black; /*Fageda*/
+  --background-color-6: black;
+  --background-color-7: black;
 }
-body{
-    background-color: var(--background-color-0);
-    color: var(--text-color-0);
-    min-height: 100vh;
-	scroll-behavior: smooth;
-	text-rendering: optimizeSpeed;
-	line-height: 1.5;
+body {
+  background-color: var(--background-color-0);
+  color: var(--text-color-0);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
-a{
-    text-decoration: none;
-    transition: 200ms;
+a {
+  text-decoration: none;
+  transition: 200ms;
 }
-div, .logo-wrap, section, nav, ul{ /*revisar si es pot eliminar logo wrap*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+div,
+.logo-wrap,
+section,
+nav,
+ul {
+  /*revisar si es pot eliminar logo wrap*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main{
-    margin-top: var(--header-height-desktop);
+main {
+  margin-top: var(--header-height-desktop);
 }
 
-@media (max-width: 1090px){
-    main{
-        margin-top: var(--header-height-mobile);
-    }
+@media (max-width: 1000px) {
+  main {
+    margin-top: var(--header-height-mobile);
+  }
 }
