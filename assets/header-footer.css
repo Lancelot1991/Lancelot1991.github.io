@@ -35,6 +35,9 @@
 .icon-wrap {
   display: none;
 }
+.dropdown__wrap {
+  width: 100%;
+}
 .menu {
   gap: 1em;
   font-weight: 600;
@@ -200,26 +203,38 @@ summary::-webkit-details-marker {
   #icon-wrap {
     transition: top 1s;
   }
-  .menu,
+  /* .menu,
   .menu--small,
   .options {
     display: none;
     padding: 0px;
-    /* position: absolute; */
+    position: absolute;
   }
   .menu__wrap:hover .menu,
   .menu__wrap:hover .menu--small,
   .menu__wrap:hover .options {
     display: flex;
-  }
-  .menu__wrap:hover {
+  } */
+  .menu__wrap {
     position: fixed;
     top: var(--header-height-mobile);
     flex-direction: column;
     background-color: var(--background-color-0);
-    align-items: start;
+    padding-right: 0;
+    /* padding: 20px var(--margin-side-mobile); */
+    /* border-bottom: 4px solid var(--text-color-0); */
+    /* display: none; */
+  }
+  .dropdown__wrap {
     padding: 20px var(--margin-side-mobile);
     border-bottom: 4px solid var(--text-color-0);
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    align-items: start;
+  }
+  .display {
+    display: flex;
   }
   .circle {
     fill: var(--background-color-0);
