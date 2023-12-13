@@ -127,14 +127,13 @@
 
 /*FOOTER*/
 footer {
-  margin-top: 200px;
+  /* margin-top: 400px; */
   padding: 200px 20px 100px 20px;
-  background-color: var(--background-color-0);
+  background-color: var(--background-color-6);
   /* border-top: 1px solid var(--text-color-0); */
+  color: var(--text-color-1);
 }
-.footer > p {
-  color: var(--text-color-0);
-}
+
 .legal-links {
   gap: 40px;
   padding-top: 40px;
@@ -142,7 +141,7 @@ footer {
 .legal-links > a {
   font-family: var(--font-title);
   font-size: smaller;
-  color: var(--text-color-0);
+  /* color: var(--text-color-0); */
 }
 .legal-links > a:hover {
   text-decoration: underline;

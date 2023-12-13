@@ -1,13 +1,16 @@
-//HIDE-SHOW HEADER
+// ----------------------------------------------------------------
+// HEADER/MENU ANIMATIONS AND FUNCTIONALITY
+// ----------------------------------------------------------------
 let lastScrollTop = 0;
 const header = document.getElementById("header-hide");
 const icon = document.getElementById("icon-wrap");
 const dropdownMenu = document.getElementById("dropdown-wrap");
 const subMenues = document.querySelectorAll(".sub-menu");
 
+//HIDE-SHOW
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  //the header should stay when the dropdown is opened
+  //the header should stay fixed when the dropdown is open
   if (!dropdownMenu.classList.contains("display") || window.innerWidth > 1000) {
     if (scrollTop > lastScrollTop && scrollTop > 500) {
       // Scrolling down
@@ -22,6 +25,7 @@ window.addEventListener("scroll", () => {
   }
   lastScrollTop = scrollTop;
 });
+
 //OPEN DROPDOWN ON CLICK
 icon.onclick = function () {
   dropdownMenu.classList.toggle("display");
@@ -45,7 +49,9 @@ subMenues.forEach((subMenu) => {
   });
 });
 
-// Dark mode
+// ----------------------------------------------------------------
+// DARK MODE
+// ----------------------------------------------------------------
 const icon1 = document.getElementById("light-btn1");
 
 icon1.onclick = function () {
@@ -55,34 +61,13 @@ icon1.onclick = function () {
     location.reload();
     document.body.classList.add("night-mode");
     icon1.src = "/icons/sun.png";
-    icon2.src = "/icons/sun.png";
   } else {
     localStorage.setItem("lightMode", "on");
     location.reload();
     document.body.classList.remove("night-mode");
     icon1.src = "/icons/moon.png";
-    icon2.src = "/icons/moon.png";
   }
 };
-
-// const icon2 = document.getElementById("light-btn2");
-// icon2.onclick = function () {
-//   const userPreferredLanguage = localStorage.getItem("lightMode");
-//   if (userPreferredLanguage == "on") {
-//     localStorage.setItem("lightMode", "off");
-//     location.reload();
-//     document.body.classList.add("night-mode");
-//     icon1.src = "/icons/sun.png";
-//     icon2.src = "/icons/sun.png";
-//   } else {
-//     localStorage.setItem("lightMode", "on");
-//     location.reload();
-//     document.body.classList.remove("night-mode");
-//     icon1.src = "/icons/moon.png";
-//     icon2.src = "/icons/moon.png";
-//   }
-// };
-
 window.addEventListener("DOMContentLoaded", async () => {
   const userPreferredLanguage = localStorage.getItem("lightMode");
   if (userPreferredLanguage == "on") {
@@ -96,7 +81,9 @@ window.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+// ----------------------------------------------------------------
 //ANIMATED SCROLL INTO VIEW
+// ----------------------------------------------------------------
 const observer = new IntersectionObserver((entries) => {
   // Loop over the entries
   entries.forEach((entry) => {
@@ -107,7 +94,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 //Get all items we want to animate
 const animatedItem = document.querySelectorAll(".animated, .link");
 // Loop over the elements and add each one to the observer

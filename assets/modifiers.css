@@ -1,10 +1,18 @@
 .content-width {
   max-width: var(--content-width);
-  margin: auto;
+  margin: 0 auto;
   padding-left: var(--margin-side-desktop);
   padding-right: var(--margin-side-desktop);
 }
-
+.narrow-width {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: var(--margin-side-desktop);
+  padding-right: var(--margin-side-desktop);
+}
+.centered {
+  justify-content: center;
+}
 .padding-top-xlarge {
   padding-top: 150px;
 }
@@ -34,6 +42,15 @@
 }
 .padding-left-small {
   padding-left: var(--margin-side-desktop);
+}
+.margin-top-xxlarge {
+  margin-top: 300px;
+}
+.margin-top-xlarge {
+  margin-top: 150px;
+}
+.margin-bot-xlarge {
+  margin-bottom: 150px;
 }
 .margin-bot-mid {
   margin-bottom: 60px;

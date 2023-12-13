@@ -13,6 +13,18 @@
 .column--horizontal {
   flex-direction: row;
 }
+.column--full-width {
+  width: 100%;
+}
+.column--narrow {
+  max-width: 500px;
+  margin: auto 0px;
+  margin-right: auto;
+  padding: 40px var(--margin-side-mobile);
+}
+#logo-leave {
+  fill: var(--text-color-0);
+}
 .column__title {
   width: 100%;
   font-size: medium;
@@ -36,5 +48,14 @@
   }
   .column > h2 {
     font-size: large;
+  }
+  .column--narrow {
+    max-width: 500px;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  #logo-leave {
+    margin-top: -100px;
+    margin-bottom: -220px;
   }
 }

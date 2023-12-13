@@ -63,6 +63,10 @@
 .btn--bg-7:hover {
   color: var(--background-color-7);
 }
+.btn--bg-8:hover {
+  color: black;
+  mix-blend-mode: lighten;
+}
 
 @media (max-width: 500px) {
   .btn-wrap {

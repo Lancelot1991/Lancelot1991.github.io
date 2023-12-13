@@ -20,6 +20,11 @@
   grid-template-rows: auto;
   grid-template-areas: "image cont";
 }
+.media--cover {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "coverrr cont";
+}
 /* .media--nested{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -31,9 +36,12 @@
   grid-area: title;
   font-family: var(--font-title);
 }
-
-.media__img {
+.media__picture {
   grid-area: image;
+  width: 100%;
+  height: 100%;
+}
+.media__img {
   /* aspect-ratio: 16/9; */
   width: 100%;
   height: 100%;
@@ -52,6 +60,16 @@
 }
 .content__title {
   font-family: var(--font-title);
+}
+.media--cover__cover {
+  grid-area: coverrr;
+  position: relative;
+}
+.media--cover__content {
+  grid-area: cont;
+  flex-direction: column;
+  gap: 50px;
+  align-items: start;
 }
 
 @media (max-width: 1000px) {
