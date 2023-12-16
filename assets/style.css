@@ -76,6 +76,22 @@ ul {
 main {
   margin-top: var(--header-height-desktop);
 }
+.decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("/images/green2.jpg"); */
+  background-color: var(--background-color-6);
+  font-size: x-large;
+  color: var(--text-color-1);
+  height: 50px;
+  z-index: 1500;
+  width: 100%;
+  position: relative;
+}
+.decoration--bottom {
+  margin-top: -50px;
+}
 
 @media (max-width: 1000px) {
   main {

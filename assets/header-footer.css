@@ -21,7 +21,6 @@
 }
 .logo {
   fill: var(--text-color-0);
-  margin-top: -35px;
   width: 60px;
   height: 60px;
 }
@@ -129,9 +128,9 @@
 footer {
   /* margin-top: 400px; */
   padding: 200px 20px 100px 20px;
-  background-color: var(--background-color-6);
-  /* border-top: 1px solid var(--text-color-0); */
-  color: var(--text-color-1);
+  /* background-color: var(--background-color-6); */
+  /* border-top: 50px solid var(--text-color-0); */
+  /* color: var(--text-color-1); */
 }
 
 .legal-links {
@@ -184,9 +183,8 @@ summary::-webkit-details-marker {
     /* border-bottom: 2px solid var(--text-color); */
   }
   .logo {
-    padding-left: -10px;
+    /* padding-left: -10px; */
     /* fill: var(--text-color); */
-    margin-top: -25px;
     width: 45px;
     height: 45px;
   }
@@ -289,6 +287,9 @@ summary::-webkit-details-marker {
   .menu--small__category {
     width: 100%;
     padding: 0px;
+  }
+  .options {
+    padding-left: 0;
   }
   .language {
     /* display: inline-block; */
