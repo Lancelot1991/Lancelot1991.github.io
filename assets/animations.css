@@ -1,18 +1,19 @@
-.translate-animation{
-    animation-name: translate;
-    animation-duration: 2.5s;
+.translate-animation {
+  animation-name: translate;
+  animation-duration: 2.5s;
 }
 
-@keyframes translate{
-    0%{
-        /* transform: translateY(100%); */
-        opacity: 0;
-    }
-    15%{
-        opacity: 0;
-    }
-    to{
-        /* transform: translateY(0); */
-        opacity: 1;
-    }
+@keyframes translate {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

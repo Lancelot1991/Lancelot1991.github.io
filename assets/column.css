@@ -23,7 +23,7 @@
   padding: 40px var(--margin-side-mobile);
 }
 #leave-icon {
-  fill: var(--text-color-0);
+  fill: var(--text-recicled);
   /* height: 76px; */
   width: 80%;
   max-width: 500px;

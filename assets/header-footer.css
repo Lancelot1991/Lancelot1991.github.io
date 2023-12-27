@@ -127,7 +127,7 @@
 /*FOOTER*/
 footer {
   /* margin-top: 400px; */
-  padding: 200px 20px 100px 20px;
+  padding: 200px 20px 0px 20px;
   /* background-color: var(--background-color-6); */
   /* border-top: 50px solid var(--text-color-0); */
   /* color: var(--text-color-1); */
@@ -135,7 +135,9 @@ footer {
 
 .legal-links {
   gap: 40px;
-  padding-top: 40px;
+  padding: 20px 0px;
+  margin-top: 50px;
+  border-top: 1px solid var(--text-color-0);
 }
 .legal-links > a {
   font-family: var(--font-title);

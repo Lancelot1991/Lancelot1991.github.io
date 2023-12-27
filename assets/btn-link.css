@@ -67,6 +67,16 @@
   color: black;
   mix-blend-mode: lighten;
 }
+.btn--cover:hover {
+  color: black;
+  background-color: var(--text-cover);
+  border-color: var(--text-cover);
+}
+.btn--recicled:hover {
+  color: white;
+  background-color: var(--text-recicled);
+  border-color: var(--text-recicled);
+}
 
 @media (max-width: 500px) {
   .btn-wrap {

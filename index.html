@@ -65,10 +65,11 @@
               <a class="menu__category" href="/projecte.html">El projecte</a>
               <a class="menu__category" href="/productes.html">Productes</a>
               <a class="menu__category" href="/voluntariat.html">Voluntariat</a>
-              <a class="menu__category" href="/practiques.html">Pràctiques</a>
-              <details class="sub-menu">
-                <!-- opens on hover when normal menu, but on click within the dropdown. Check script.js-->
-                <summary href="" class="menu__category sub-menu__title">Visites</summary>
+              <!-- <a class="menu__category" href="/practiques.html">Pràctiques</a> -->
+              <a class="menu__category" href="/visites/activitats.html">Activitats</a>
+              <!-- <details class="sub-menu"> -->
+              <!-- opens on hover when normal menu, but on click within the dropdown. Check script.js-->
+              <!-- <summary href="" class="menu__category sub-menu__title">Visites</summary>
                 <nav class="sub-menu__content">
                   <a class="sub-menu__category" href="/visites/formacions.html">Formacions</a>
                   <a class="sub-menu__category" href="/visites/activitats.html">Activitats</a>
@@ -76,7 +77,7 @@
                   <a class="sub-menu__category" href="/visites/petits-agricultors.html">Petits agricultors</a>
                   <a class="sub-menu__category" href="/visites/que-fer-al-montseny.html">Que fer al Montseny?</a>
                 </nav>
-              </details>
+              </details> -->
             </nav>
             <nav class="menu menu--small">
               <a class="menu--small__category" href="/blog.html">Blog</a>
@@ -124,8 +125,8 @@
               <img class="slide__img" src="/images/orchard.jpeg" />
             </picture>
             <div class="slide__content">
-              <h2 class="hero__title">Oferim voluntariat i pràctiques</h2>
-              <h3 class="hero__subtitle">Guanya experiència amb nosaltres</h3>
+              <h2 class="hero__title">Activitats gratuïtes</h2>
+              <h3 class="hero__subtitle">Vina i apren col·laborant!</h3>
             </div>
           </div>
           <div class="slide" id="slide4">
@@ -135,10 +136,10 @@
             </picture>
             <div class="slide__content">
               <h2 class="hero__title">Agricultura sense manteniment</h2>
-              <h3 class="hero__subtitle">Traslladem els mecanismes del bosc al nostre projecte</h3>
+              <h3 class="hero__subtitle">T'ajudem a traslladar els mecanismes del bosc al teu projecte</h3>
             </div>
           </div>
-          <div class="slide" id="slide5">
+          <!-- <div class="slide" id="slide5">
             <picture class="slide__picture">
               <source media="(max-width: 800px)" srcset="/images/calçots.png" />
               <img class="slide__img" src="/images/calçots.png" />
@@ -147,14 +148,14 @@
               <h2 class="hero__title">Activitats gratuïtes</h2>
               <h3 class="hero__subtitle">Vina i apren, treballant al camp</h3>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="dot-container">
           <span class="dot" onclick="currentSlide = 1; showSlide(currentSlide - 1)"></span>
           <span class="dot" onclick="currentSlide = 2; showSlide(currentSlide - 1)"></span>
           <span class="dot" onclick="currentSlide = 3; showSlide(currentSlide - 1)"></span>
           <span class="dot" onclick="currentSlide = 4; showSlide(currentSlide - 1)"></span>
-          <span class="dot" onclick="currentSlide = 5; showSlide(currentSlide - 1)"></span>
+          <!-- <span class="dot" onclick="currentSlide = 5; showSlide(currentSlide - 1)"></span> -->
         </div>
       </section>
 
@@ -165,7 +166,7 @@
         <div class="column-wrap">
           <div class="column">
             <h2 class="column__title">BIO-arquitectura</h2>
-            <p class="column__text">Les Tillandsies són el punt de partida idoni per la bio-arquitectura del futur: amb la mínima humitat i pols que puguin atrapar en tenen prou per viure, de manera que el manteniment és quasi nul i, al mateix temps, van atrapant CO₂ de l'atmosfera.</p>
+            <p class="column__text">Les Tillandsies són el punt de partida idoni per a la bio-arquitectura del futur: amb la mínima humitat i pols que puguin atrapar en tenen prou per viure, de manera que el manteniment és quasi nul i, al mateix temps, van atrapant CO₂ de l'atmosfera.</p>
           </div>
           <div class="column">
             <h2 class="column__title">Agricultura regenerativa</h2>
@@ -206,7 +207,7 @@
           <h3 class="cover__title animated content-width">Productes de temporada</h3>
           <p class="cover__text narrow-width">Fem melmelades, sidra amb diverses fruites, i molt més! El volum de producció és baix i variable en funció de l'època de l'any, l'habitual quan es treballa seguint els principis de l'agricultura organica. Disposem d'un calendari amb la disponibilitat dels nostres <strong>productes de màxima qualitat</strong>.</p>
           <div class="btn-wrap centered">
-            <a class="btn btn--color-1 btn--bg-8" href="/productes.html">Productes</a>
+            <a class="btn btn--cover" href="/productes.html">Productes</a>
           </div>
         </div>
       </section>
@@ -220,16 +221,16 @@
             </div>
           </div>
           <div class="column">
-            <h2 class="column__title">Pràctiques per a estudiants</h2>
+            <h2 class="column__title">Activitats per a embrutar-se</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aut soluta, odio sint quia delectus amet iste eaque sed animi. Veritatis modi sunt iste, dolor suscipit commodi id adipisci necessitatibus.</p>
             <div class="btn-wrap">
-              <a class="btn animated" href="/practiques.html" target="_blank">Practica amb nosaltres</a>
+              <a class="btn animated" href="/visites/activitats.html" target="_blank">Calendari</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section margin-top-xlarge" style="background-image: url(/images/reciclat.jpg); max-height: 90vh; min-height: 88vh">
+      <section class="section margin-top-xlarge" style="background-image: url(/images/reciclat.jpg); max-height: 90vh; min-height: 88vh; color: var(--text-recicled)">
         <div class="column-wrap">
           <div class="column" style="margin: auto 0; justify-content: center; align-items: center">
             <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering: geometricPrecision; text-rendering: geometricPrecision; image-rendering: optimizeQuality; fill-rule: evenodd; clip-rule: evenodd" viewBox="0 0 14800 7600" xmlns:xlink="http://www.w3.org/1999/xlink" id="leave-icon">
@@ -246,7 +247,7 @@
             <h2 class="section__title">Portem la <span style="font-weight: 200; text-decoration: underline 1px; text-underline-offset: 0.2em">sostenibilitat</span> amb nosaltres, des del primer dia.</h2>
             <p>El nostre compromís amb la sostenibilitat és a l'origen del projecte, que ha nescut per contribuir a resoldre una problemàtica ambiental. La voluntat de dignificar l'importància de l'agricultura és inseparable del respecte al nostre entorn. Per això, treballar per a un món més sostenible forma part de la nostra raó de ser, i cada dia ens esforcem per desenvolupar i implantar bones pràctiques en aquesta direcció.</p>
             <div class="btn-wrap">
-              <a class="btn" href="/projecte.html">Coneix el projecte</a>
+              <a class="btn btn--recicled" href="/projecte.html">Coneix el projecte</a>
             </div>
           </div>
         </div>
@@ -265,7 +266,7 @@
             <a class="link" href="https://ca.wikipedia.org/wiki/Tur%C3%B3_de_l%27Home" target="_blank">Turó de l'Home</a>
           </div>
           <div class="btn-wrap centered">
-            <a class="btn btn--color-1 btn--bg-8" href="/contacte.html">Vina al Montseny</a>
+            <a class="btn btn--cover" href="/contacte.html">Vina al Montseny</a>
           </div>
         </div>
       </section>
